@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exam1/ExamStack/common/Common.iml" filepath="$PROJECT_DIR$/Exam1/ExamStack/common/Common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Exam.iml" filepath="$PROJECT_DIR$/.idea/Exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exam1/ExamStack/ExamStack.iml" filepath="$PROJECT_DIR$/Exam1/ExamStack/ExamStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exam1/ExamStack/management/Management.iml" filepath="$PROJECT_DIR$/Exam1/ExamStack/management/Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exam1/ExamStack/portal/Portal.iml" filepath="$PROJECT_DIR$/Exam1/ExamStack/portal/Portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/ScoreMarker.iml" filepath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/ScoreMarker.iml" />
     </modules>
   </component>
 </project>

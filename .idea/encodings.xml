@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Exam1/ExamStack" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exam1/ExamStack/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exam1/ExamStack/management" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exam1/ExamStack/portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exam1/ExamStack/scoreMarker" charset="UTF-8" />
+  </component>
+</project>

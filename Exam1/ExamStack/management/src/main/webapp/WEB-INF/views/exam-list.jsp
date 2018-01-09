@@ -48,9 +48,9 @@
 				<div class="col-xs-5">
 					<div class="logo">
 						<h1>
-							<a href="#">网站管理系统</a>
+							<a href="#">会计基础在线考试系统——后台管理</a>
 						</h1>
-						<div class="hmeta">专注互联网在线考试解决方案</div>
+						<div class="hmeta"></div>
 					</div>
 				</div>
 				<div class="col-xs-7" id="login-info">

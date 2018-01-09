@@ -99,7 +99,7 @@ String basePath = request.getScheme() + "://"
 
 					<div class="col-md-12">
 						<div class="lrform">
-							<h5>登陆ExamStack</h5>
+							<h5>登陆会计基础学习系统——学生端</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">
@@ -147,7 +147,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								ExamStack Copyright © <a href="http://www.examstack.com/" target="_blank">ExamStack</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examstack.com/" target="_blank">关于我们</a> | <a href="http://www.examstack.com/" target="_blank">FAQ</a> | <a href="http://www.examstack.com/" target="_blank">联系我们</a>
+								<%--ExamStack Copyright © <a href="http://www.examstack.com/" target="_blank">ExamStack</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examstack.com/" target="_blank">关于我们</a> | <a href="http://www.examstack.com/" target="_blank">FAQ</a> | <a href="http://www.examstack.com/" target="_blank">联系我们</a>--%>
 							</p>
 						</div>
 					</div>

@@ -52,10 +52,10 @@ request.setAttribute("leftMenuId","");
 				<div class="row">
 					<div class="col-xs-5">
 						<div class="logo">
-							<h1><a href="#">网站管理系统</a></h1>
-							<div class="hmeta">
-								专注互联网在线考试解决方案
-							</div>
+							<h1><a href="#">会计基础在线考试系统——后台管理</a></h1>
+							<%--<div class="hmeta">--%>
+								<%----%>
+							<%--</div>--%>
 						</div>
 					</div>
 					<div class="col-xs-7" id="login-info">
@@ -121,7 +121,7 @@ request.setAttribute("leftMenuId","");
 							    <p class="bg-success">
 							    	<i class="ace-icon fa fa-check green"></i>
 							    
-							   		欢迎使用ExamStack后台管理系统，您可以在此页面快速查看您系统的状态。
+							   		欢迎使用会计基础在线考试后台管理系统，您可以在此页面快速查看您系统的状态。
 							    </p>
 							    
 							    <div class="row" style="margin-top:20px;">

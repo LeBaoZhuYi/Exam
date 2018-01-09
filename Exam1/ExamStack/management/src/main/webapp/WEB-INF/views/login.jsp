@@ -36,9 +36,9 @@ String basePath = request.getScheme() + "://"
 				<div class="row">
 					<div class="col-xs-5">
 						<div class="logo">
-							<h1><a href="#">网站管理系统</a></h1>
+							<h1><a href="#">会计基础在线考试系统——后台管理</a></h1>
 							<div class="hmeta">
-								专注互联网在线考试解决方案
+
 							</div>
 						</div>
 					</div>
@@ -83,7 +83,7 @@ String basePath = request.getScheme() + "://"
 					</div>
 					<div class="col-md-5">
 						<div class="lrform">
-							<h5>登陆网站管理系统</h5>
+							<h5>登陆后台管理</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">
