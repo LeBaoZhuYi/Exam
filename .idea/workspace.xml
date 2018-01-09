@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ecf906e-27f4-4144-accd-205c61d98276" name="Default" comment="commit1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/admin-login-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/admin-login-bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/icon20_20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/pattern-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_flat_55_c0402a_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_flat_55_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_glass_100_f8f8f8_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_glass_35_dddddd_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_glass_60_eeeeee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_inset-hard_75_999999_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_0073ea_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_3383bb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_4eb305_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_4eb305_256x240_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_4eb305_256x240_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_70b2e1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_fbc856_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/d-mobile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/d-old.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/d.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/dot_for_ie.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/throbber.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/files/test.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/flash/player.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-icons_2694e8_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-icons_3d80b3_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-icons_72a7cf_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/ad.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/ad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/icon-all.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/icon20_20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/logo-s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/photo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/simplest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/training-content.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-gloss-cyan-menu-item-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-gloss-menu-item-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-gloss-semitransparent-menu-item-hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-human-menu-item-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-osx-menu-item-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-vista-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-vista-menu-item-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/images/cmenu-xp-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/__MACOSX/._uploadify.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/uploadify-cancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/uploadify.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/template/doc_tmp.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/template/question.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/template/user.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/icon20_20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/pattern-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_flat_55_c0402a_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_flat_55_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_glass_100_f8f8f8_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_glass_35_dddddd_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_glass_60_eeeeee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_inset-hard_75_999999_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_0073ea_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_3383bb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_4eb305_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_4eb305_256x240_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_4eb305_256x240_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_70b2e1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_fbc856_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/flash/player.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/ad.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/ad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/icon-all.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/icon20_20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/logo-s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/photo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/simplest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/training-content.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/bigplay.fw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/bigplay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/controls-ted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/controls-wmp-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/controls-wmp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/controls.fw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/flashmediaelement.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/jumpforward.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/skipback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/__MACOSX/._uploadify.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/uploadify-cancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/uploadify.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/font/vjs.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/font/vjs.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/font/vjs.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/video-js.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/template/perl.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/template/question.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/template/user.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/prunsrv.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/daemon/AbstractDaemon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/AnswerSheet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/AnswerSheetItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/Exam.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/ExamFinishParam.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/ExamHistory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/ExamPaper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/Message.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/Paper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/PaperCreatorParam.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/exam/UserQuestionHistory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/news/News.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/practice/KnowledgePointAnalysisResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/practice/SubmitParam.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/practice/TypeAnalysis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/Comment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/Comments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/Field.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/KnowledgePoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/PointStatistic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/Question.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionContent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionHistory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionImproveResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionQueryResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionStatistic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionStruts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionTag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/QuestionType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/question/Tag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/training/Training.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/training/TrainingSection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/training/TrainingSectionProcess.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/training/UserTraining.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/training/UserTrainingHistory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/user/Department.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/user/Group.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/user/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/domain/user/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/CustomXWPFDocument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/EhcacheTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/MenuItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/MyInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/Page.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/PagingUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/Population.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/QuestionAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/ReflectUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/Roulette.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/StandardPasswordEncoderForSha1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/StreamGobbler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/StringUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/ExcelUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/FileUploadUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/Html2Doc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/JOD4DocToPDF.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/MD5FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/PdfToSwf.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/file/PropertyReaderUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/java/com/examstack/common/util/xml/Object2Xml.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/resources/ehcache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/resources/ehcache.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/common/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/examstack.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/DashBoardAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/ExamAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/QuestionAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/TrainingAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/UserAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/admin/CommonActionAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/admin/ExamActionAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/admin/ExamPaperActionAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/admin/SystemActionAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/admin/TrainingActionAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/admin/UserActionAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/teacher/DashBoardPageTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/teacher/ExamActionTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/teacher/ExamPaperActionTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/action/teacher/TrainingActionTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/BasePage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/MenuPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/SystemPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/CommonPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/DashBoardPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/ExamPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/ExamPaperPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/QuestionPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/SystemPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/TrainingPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/admin/UserPageAdmin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/teacher/ExamPageTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/teacher/ExamPaperPageTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/teacher/QuestionPageTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/teacher/TrainingPageTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/controller/page/teacher/UserPageTeacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/ExamMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/ExamPaperMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/NewsMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/QuestionHistoryMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/QuestionMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/SystemMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/TrainingMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/persistence/UserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/security/UserDetailsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/security/UserInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/security/UserInfoUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/security/filter/AuthenticationFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/security/handler/ExtrAuthenticationSuccessHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/ExamPaperService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/ExamPaperServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/ExamService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/ExamServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/NewsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/NewsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/QuestionHistoryService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/QuestionHistoryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/QuestionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/QuestionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/SystemService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/SystemServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/TrainingService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/TrainingServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/java/com/examstack/management/service/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/ExamMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/ExamPaperMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/NewsMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/QuestionHistoryMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/QuestionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/SystemMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/TrainingMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/com/examstack/management/persistence/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/ehcache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/ehcache.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/spring/appServlet/controllers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/spring/rabbitmq.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/spring/root-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/spring/scheduler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/spring/security.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/add-admin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/add-field.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/add-point.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/add-tag.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/admin/teacher-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/common/footer.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/common/left-menu.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/common/top-menu.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/dashboard.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/dep-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exam-add.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exam-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exampaper-add.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exampaper-edit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exampaper-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exampaper-mark.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/exampaper-preview.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/field-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/footer.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/home.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/inner/add-tag.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/inner/tag-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/inner/user-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/knowledge-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/model-test-add.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/model-test-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/news-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/practice-status.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/question-add.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/question-import.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/question-list-dialog.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/question-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/question-preview.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/regist-success.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/register.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/section.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/start-exam.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/student-answer-sheet.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/sys-admin-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/sys-backup.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/tag-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/tmp.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/training-add.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/training-history.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/training-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/user-exam-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/views/user-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap-huan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/less/morris.core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.area.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.bar.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.donut.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.grid.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.hover.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/lib/morris.line.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/morris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/morris.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/morris.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chart/raphael-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chartjs/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chartjs/Chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chartjs/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chartjs/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chartjs/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/chartjs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/exam.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/jquery-ui-1.9.2.custom.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/jquery.placeholder.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/less-1.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/proton-jstree.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/proton-mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/proton-variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/style-original.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/style.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/proton/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/question-add.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/spinning.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_spinning.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/agenda-views.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/basic-views.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/external-dragging.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/gcal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/json/events.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/languages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/php/get-events.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/php/get-timezones.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/php/utils.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/selectable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/theme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/demos/timezones.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/fullcalendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/fullcalendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/fullcalendar.print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/gcal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ar-sa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/de-at.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/sr-cyrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lang/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/cupertino/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/lib/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/fullcalendar-2.1.1/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-dep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-exam.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-field.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-model-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-news.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-point.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-tag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-teacher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-training-section.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-training.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/add-user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/admin-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/jquery.contextmenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/contextmenu/jquery.contextmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/dashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/dep-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/echarts-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exam-finished.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exam-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exam-user-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/examing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exampaper-add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exampaper-edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exampaper-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exampaper-mark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/exampaper-preview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/field-2-point.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/field-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/group-manage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/group-tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/group-user-menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/jquery.ui.datepicker-zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/jquery/jquery-1.9.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/jquery/jquery-1.9.0.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/jquery/jquery-ui-1.9.2.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/jquery/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/modify-user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/paper-examing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/point-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/point-select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/practice-improve-qh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/practice-improve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/practice-testing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/pwd-change.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/question-add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/question-import.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/question-lib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/question-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/question-list4dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/question-upload-img.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/register.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/student-exam-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/tag-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/teacher-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/training-file-upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/training-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/training-process-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/update-admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/update-teacher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/update-user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/Change Log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/__MACOSX/._Change Log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/check-exists.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/jquery.uploadify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/jquery.uploadify.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/jquery.uploadify3.1Fixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/uploadify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/uploadify/uploadify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/user-list-inner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/inline-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/jquery.fullscreen-0.3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/question-4cep-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/question-admin-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/question-teacher-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/simple-jstree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/management/src/main/webapp/resources/js/util/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/action/CommentAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/action/ExamAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/action/PracticeAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/action/TrainingAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/action/UserAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/page/ExamPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/page/MenuPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/page/PracticePage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/page/TrainingPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/page/UserCenterPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/controller/page/UserPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/CommentMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/ExamMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/ExamPaperMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/NewsMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/QuestionHistoryMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/QuestionMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/TrainingMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/persistence/UserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/security/UserDetailsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/security/UserDetailsServiceImpl2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/security/UserInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/security/UserInfoUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/security/filter/AuthenticationFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/security/handler/ExtrAuthenticationSuccessHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/CommentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/CommentServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/ExamPaperService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/ExamPaperServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/ExamService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/ExamServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/NewsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/NewsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/QuestionHistoryService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/QuestionHistoryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/QuestionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/QuestionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/TrainingService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/TrainingServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/java/com/examstack/portal/service/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/CommentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/ExamMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/ExamPaperMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/NewsMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/QuestionHistoryMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/QuestionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/TrainingMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/com/examstack/portal/persistence/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/ehcache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/ehcache.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/spring/appServlet/controllers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/spring/rabbitmq.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/spring/root-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/spring/scheduler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/spring/security.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/analysis.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/change-password.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/error.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/exam-finished.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/exam-history.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/exam.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/examing.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/finished-submit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/home.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/news-detail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/practice-improve-qh.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/practice-improve.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/practice.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/quick-start.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/regist-success.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/register.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/setting.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/student-answer-sheet.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/training-history.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/training-list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/training-pdf.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/training-practice.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/training.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/usercenter.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/views/video.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/html/exam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/html/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/html/practice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/html/training.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap-huan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/less/morris.core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.area.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.bar.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.donut.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.grid.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.hover.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/lib/morris.line.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/morris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/morris.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/morris.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chart/raphael-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chartjs/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chartjs/Chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chartjs/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chartjs/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chartjs/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/chartjs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/exam.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/jquery-ui-1.9.2.custom.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/jquery.placeholder.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/question-add.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/spinning.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_spinning.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/add-field.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/add-point.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/add-tag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/echarts-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/exam-finished.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/examing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/exampaper-add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/exampaper-edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/exampaper-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/exampaper-mark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/exampaper-preview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/field-2-point.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/field-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/jquery/jquery-1.9.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/jquery/jquery-ui-1.9.2.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/jquery/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/jwplayer/jwplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/bigplay.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/controls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/mediaelement-and-player.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/mediaelement.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/mediaelementplayer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/mediaelement/mejs-skins.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/modify-user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/paper-examing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/point-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/point-select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/practice-improve-qh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/practice-improve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/practice-testing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/pwd-change.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/question-add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/question-import.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/question-lib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/question-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/question-list4dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/question-upload-img.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/register.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/training-comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/update-user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/Change Log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/__MACOSX/._Change Log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/check-exists.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/jquery.uploadify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/jquery.uploadify.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/jquery.uploadify3.1Fixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/uploadify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/uploadify/uploadify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/html5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/inline-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/jquery.fullscreen-0.3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/question-4cep-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/question-admin-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/question-teacher-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/util/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/font/vjs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/video-js.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/videojs-ie8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/portal/src/main/webapp/resources/js/videojs/videojs-ie8.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/config/scoremaker.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/installService.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/scoremarker" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/src/main/java/com/examstack/scoremarker/ScoreCalcuService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/src/main/java/com/examstack/scoremarker/ScoreMarkerMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/src/main/java/com/examstack/scoremarker/ScoreMarkerWin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/src/main/java/com/examstack/scoremarker/config/ScoreMarkConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exam1/ExamStack/scoreMarker/src/main/resources/log4j.properties" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Exam1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Exam1" type="462c0819:PsiDirectoryNode" />
+              <item name="ExamStack" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ecf906e-27f4-4144-accd-205c61d98276" name="Default" comment="" />
+      <created>1515502372762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515502372762</updated>
+      <workItem from="1515502374352" duration="1000" />
+      <workItem from="1515502439102" duration="437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="438000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
