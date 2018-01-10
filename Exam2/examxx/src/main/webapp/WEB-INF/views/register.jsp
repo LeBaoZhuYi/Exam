@@ -160,16 +160,16 @@ String basePath = request.getScheme() + "://"
 									</div>
 
 									<!-- Checkbox -->
-									<div class="form-group form-confirm">
-										<div class="col-md-9 col-md-offset-3">
-											<label class="checkbox-inline">
-												<input type="checkbox"
-												id="inlineCheckbox1" value="agree">
-												<a> 同意Exam++条款</a> </label>
-											<span class="form-message"></span>
-										</div>
+									<%--<div class="form-group form-confirm">--%>
+										<%--<div class="col-md-9 col-md-offset-3">--%>
+											<%--<label class="checkbox-inline">--%>
+												<%--<input type="checkbox"--%>
+												<%--id="inlineCheckbox1" value="agree">--%>
+												<%--<a> 同意Exam++条款</a> </label>--%>
+											<%--<span class="form-message"></span>--%>
+										<%--</div>--%>
 
-									</div>
+									<%--</div>--%>
 
 									<!-- Buttons -->
 									<div class="form-group">
@@ -200,7 +200,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								Exam++ Copyright © <a href="http://www.examxx.net/" target="_blank">Exam++</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examxx.net/" target="_blank">关于我们</a> | <a href="http://www.examxx.net/" target="_blank">FAQ</a> | <a href="http://www.examxx.net/" target="_blank">联系我们</a>
+								<%--Exam++ Copyright © <a href="http://www.examxx.net/" target="_blank">Exam++</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examxx.net/" target="_blank">关于我们</a> | <a href="http://www.examxx.net/" target="_blank">FAQ</a> | <a href="http://www.examxx.net/" target="_blank">联系我们</a>--%>
 							</p>
 						</div>
 					</div>

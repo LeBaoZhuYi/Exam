@@ -140,31 +140,31 @@ String basePath = request.getScheme() + "://"
 			<!-- Slider (Flex Slider) -->
 
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="flexslider">
-							<div class="flex-caption">
-								<!-- Left column -->
-								<div class="col-l">
-									<p style="text-indent:2em;">Exam++是国内首款一款基于JAVA与MYSQL开发的网络考试系统。它可以稳定、顺畅的运行在Windows与Linux平台上。您可以通过它快捷方便的创建试题和题库，发布试卷，组织考试，系统自动批改。高度的可配置性和灵活性使得它可以被应用于很多领域。</p>
-									<p style="text-indent:2em;">软件采用GPL协议，完全开放且免费，并且有固定的开发团队提供技术支持</p>
-								</div>
-								<!-- Right column -->
-								<div class="col-r">
+				<%--<div class="row">--%>
+					<%--<div class="col-md-12">--%>
+						<%--<div class="flexslider">--%>
+							<%--<div class="flex-caption">--%>
+								<%--<!-- Left column -->--%>
+								<%--<div class="col-l">--%>
+									<%--<p style="text-indent:2em;">Exam++是国内首款一款基于JAVA与MYSQL开发的网络考试系统。它可以稳定、顺畅的运行在Windows与Linux平台上。您可以通过它快捷方便的创建试题和题库，发布试卷，组织考试，系统自动批改。高度的可配置性和灵活性使得它可以被应用于很多领域。</p>--%>
+									<%--<p style="text-indent:2em;">软件采用GPL协议，完全开放且免费，并且有固定的开发团队提供技术支持</p>--%>
+								<%--</div>--%>
+								<%--<!-- Right column -->--%>
+								<%--<div class="col-r">--%>
 
-									<!-- Use the class "flex-back" to add background inside flex slider -->
+									<%--<!-- Use the class "flex-back" to add background inside flex slider -->--%>
 
-									<!-- <img alt="" src="resources/images/ad.png"> -->
-									<p>如果您对软件有任何反馈和建议，加入我们的QQ群152258375一起讨论吧</p>
+									<%--<!-- <img alt="" src="resources/images/ad.png"> -->--%>
+									<%--<p>如果您对软件有任何反馈和建议，加入我们的QQ群152258375一起讨论吧</p>--%>
 
-									<!-- Button -->
-										<a class="btn btn-default btn-cta" href="user-register"><i class="fa fa-arrow-circle-down"></i> 马上加入我们吧</a>
+									<%--<!-- Button -->--%>
+										<%--<a class="btn btn-default btn-cta" href="user-register"><i class="fa fa-arrow-circle-down"></i> 马上加入我们吧</a>--%>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+								<%--</div>--%>
+							<%--</div>--%>
+						<%--</div>--%>
+					<%--</div>--%>
+				<%--</div>--%>
 			</div>
 		</div>
 		<div class="content" style="margin-bottom: 100px;">
@@ -321,84 +321,84 @@ String basePath = request.getScheme() + "://"
 								<!--//content-->
 							</div>
 						</div>
-						<div class="select-test col-xs-6">
-							<div style="height: 100px;">
-								<div class="select-test-icon">
-									<i class="fa fa-book"></i>
-								</div>
-								<div class="select-test-content">
-									<h3 class="title">随机组卷</h3>
-									<p>
-										随机组成试卷参加考试
-									</p>
-									<a class="btn btn-primary" data-toggle="modal" data-target=".history-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>
-									<div class="modal fade history-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									  <div class="modal-dialog">
-									    <div class="modal-content">
-									    	<div class="modal-header">
-										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										        <h6 class="modal-title" id="myModalLabel">选择试卷，参加考试</h6>
-										     </div>
-										     <div class="modal-body">
-										     	<ul>
-										     		<c:forEach items="${historypaper}" var="item">
-										     			<li>
-										     				<a href="student/examing/${item.id}">${item.name}</a>
-										     			</li>
-										     		</c:forEach>
-										     	</ul>
-										     </div>
-										     <div class="modal-footer">
-        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
-      										 </div>
-									    	
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<!--//content-->
+						<%--<div class="select-test col-xs-6">--%>
+							<%--<div style="height: 100px;">--%>
+								<%--<div class="select-test-icon">--%>
+									<%--<i class="fa fa-book"></i>--%>
+								<%--</div>--%>
+								<%--<div class="select-test-content">--%>
+									<%--<h3 class="title">随机组卷</h3>--%>
+									<%--<p>--%>
+										<%--随机组成试卷参加考试--%>
+									<%--</p>--%>
+									<%--<a class="btn btn-primary" data-toggle="modal" data-target=".history-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>--%>
+									<%--<div class="modal fade history-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">--%>
+									  <%--<div class="modal-dialog">--%>
+									    <%--<div class="modal-content">--%>
+									    	<%--<div class="modal-header">--%>
+										        <%--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>--%>
+										        <%--<h6 class="modal-title" id="myModalLabel">选择试卷，参加考试</h6>--%>
+										     <%--</div>--%>
+										     <%--<div class="modal-body">--%>
+										     	<%--<ul>--%>
+										     		<%--<c:forEach items="${historypaper}" var="item">--%>
+										     			<%--<li>--%>
+										     				<%--<a href="student/examing/${item.id}">${item.name}</a>--%>
+										     			<%--</li>--%>
+										     		<%--</c:forEach>--%>
+										     	<%--</ul>--%>
+										     <%--</div>--%>
+										     <%--<div class="modal-footer">--%>
+        										<%--<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>--%>
+      										 <%--</div>--%>
+									    	<%----%>
+									    <%--</div>--%>
+									  <%--</div>--%>
+									<%--</div>--%>
+								<%--</div>--%>
+								<%--<!--//content-->--%>
 
-							</div>
-						</div>
-						<div class="select-test col-xs-6">
-							<div style="height: 100px;">
-								<div class="select-test-icon">
-									<i class="fa fa-rocket"></i>
-								</div>
-								<div class="select-test-content">
-									<h3 class="title">专家试卷</h3>
-									<p>
-										专家组卷，为你提供更权威的考题动向
-									</p>
-									<a class="btn btn-primary" data-toggle="modal" data-target=".expert-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>
-									<div class="modal fade expert-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									  <div class="modal-dialog">
-									    <div class="modal-content">
-									    	<div class="modal-header">
-										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										        <h6 class="modal-title" id="myModalLabel">选择试卷，参加考试</h6>
-										     </div>
-										     <div class="modal-body">
-										     	<ul>
-										     		<c:forEach items="${expertpaper}" var="item">
-										     			<li>
-										     				<a href="student/examing/${item.id}">${item.name}</a>
-										     			</li>
-										     		</c:forEach>
-										     	</ul>
-										     </div>
-										     <div class="modal-footer">
-        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
-      										 </div>
-									    	
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<!--//content-->
+							<%--</div>--%>
+						<%--</div>--%>
+						<%--<div class="select-test col-xs-6">--%>
+							<%--<div style="height: 100px;">--%>
+								<%--<div class="select-test-icon">--%>
+									<%--<i class="fa fa-rocket"></i>--%>
+								<%--</div>--%>
+								<%--<div class="select-test-content">--%>
+									<%--<h3 class="title">专家试卷</h3>--%>
+									<%--<p>--%>
+										<%--专家组卷，为你提供更权威的考题动向--%>
+									<%--</p>--%>
+									<%--<a class="btn btn-primary" data-toggle="modal" data-target=".expert-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>--%>
+									<%--<div class="modal fade expert-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">--%>
+									  <%--<div class="modal-dialog">--%>
+									    <%--<div class="modal-content">--%>
+									    	<%--<div class="modal-header">--%>
+										        <%--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>--%>
+										        <%--<h6 class="modal-title" id="myModalLabel">选择试卷，参加考试</h6>--%>
+										     <%--</div>--%>
+										     <%--<div class="modal-body">--%>
+										     	<%--<ul>--%>
+										     		<%--<c:forEach items="${expertpaper}" var="item">--%>
+										     			<%--<li>--%>
+										     				<%--<a href="student/examing/${item.id}">${item.name}</a>--%>
+										     			<%--</li>--%>
+										     		<%--</c:forEach>--%>
+										     	<%--</ul>--%>
+										     <%--</div>--%>
+										     <%--<div class="modal-footer">--%>
+        										<%--<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>--%>
+      										 <%--</div>--%>
+									    	<%----%>
+									    <%--</div>--%>
+									  <%--</div>--%>
+									<%--</div>--%>
+								<%--</div>--%>
+								<%--<!--//content-->--%>
 
-							</div>
-						</div>
+							<%--</div>--%>
+						<%--</div>--%>
 
 					</div>
 
@@ -413,7 +413,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								Exam++ Copyright © <a href="http://www.examxx.net/" target="_blank">Exam++</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examxx.net/" target="_blank">关于我们</a> | <a href="http://www.examxx.net/" target="_blank">FAQ</a> | <a href="http://www.examxx.net/" target="_blank">联系我们</a>
+								<%--Exam++ Copyright © <a href="http://www.examxx.net/" target="_blank">Exam++</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examxx.net/" target="_blank">关于我们</a> | <a href="http://www.examxx.net/" target="_blank">FAQ</a> | <a href="http://www.examxx.net/" target="_blank">联系我们</a>--%>
 							</p>
 						</div>
 					</div>
