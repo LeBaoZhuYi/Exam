@@ -63,8 +63,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 							</c:when>
 							<c:otherwise>
-								<a class="btn btn-primary" href="user-register">用户注册</a>
-								<a class="btn btn-success" href="user-login-page">登录</a>
+								<%--<a class="btn btn-primary" href="user-register">用户注册</a>--%>
+								<%--<a class="btn btn-success" href="user-login-page">登录</a>--%>
 							</c:otherwise>
 						</c:choose>
 					</div>
@@ -78,22 +78,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 					<ul class="nav navbar-nav">
 						<li>
-							<a href="home"><i class="fa fa-home"></i>主页</a>
+							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
 						</li>
 						<li>
-							<a href="student/practice-list"><i class="fa fa-edit"></i>试题练习</a>
+							<a href="student/usercenter"><i class="fa Example of hand-o-right"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa  fa-paper-plane-o"></i>在线考试</a>
+							<a href="training-list"><i class="fa  Example of hand-o-right"></i>在线课程</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa fa-book"></i>培训资料</a>
+							<a href="student/practice-list"><i class="fa Example of hand-o-right"></i>在线练习</a>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
+							<a href="exam-list"><i class="fa Example of hand-o-right"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
+							<a href="student/setting"><i class="fa Example of hand-o-right"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>
