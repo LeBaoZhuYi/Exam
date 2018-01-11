@@ -14,7 +14,7 @@ String basePath = request.getScheme() + "://"
 		<base href="<%=basePath%>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>会计基础学习系统</title>
+		<title>出纳实务训练学习系统</title>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
@@ -36,7 +36,7 @@ String basePath = request.getScheme() + "://"
 				<div class="row">
 					<div class="col-xs-5">
 						<div class="logo">
-							<h1><a href="#">会计基础在线考试系统——后台管理</a></h1>
+							<h1><a href="#">出纳实务训练在线考试系统——后台管理</a></h1>
 							<div class="hmeta">
 
 							</div>

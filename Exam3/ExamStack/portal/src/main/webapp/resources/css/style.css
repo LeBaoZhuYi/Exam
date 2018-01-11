@@ -1,5 +1,6 @@
 body {
-	color: #666;
+	background: url('../images/bg.png') center no-repeat;
+	background-size: cover;
 	line-height: 25px;
 	font-weight: 400;
 	font-family: '微软雅黑','宋体','Open Sans', sans-serif;
@@ -2088,7 +2089,7 @@ header {
 .full-slider {
 	border-top: 5px solid #186C96;
 	background: #2098D3;
-	background-image: url(./images/bg.png);
+	background-image: url(images/backa.png);
 }
 
 .full-slider .button a {

@@ -238,7 +238,7 @@ String basePath = request.getScheme() + "://"
 						</div>
 						<div class="field-category-text ">
 							<p>
-								会计基础知识
+								出纳实务训练知识
 							</p>
 						</div>
 					</div>

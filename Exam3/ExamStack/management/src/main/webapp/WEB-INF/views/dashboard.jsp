@@ -52,7 +52,7 @@ request.setAttribute("leftMenuId","");
 				<div class="row">
 					<div class="col-xs-5">
 						<div class="logo">
-							<h1><a href="#">会计基础在线考试系统——后台管理</a></h1>
+							<h1><a href="#">出纳实务训练在线考试系统——后台管理</a></h1>
 							<%--<div class="hmeta">--%>
 								<%----%>
 							<%--</div>--%>
@@ -121,7 +121,7 @@ request.setAttribute("leftMenuId","");
 							    <p class="bg-success">
 							    	<i class="ace-icon fa fa-check green"></i>
 							    
-							   		欢迎使用会计基础在线考试后台管理系统，您可以在此页面快速查看您系统的状态。
+							   		欢迎使用出纳实务训练在线考试后台管理系统，您可以在此页面快速查看您系统的状态。
 							    </p>
 							    
 							    <div class="row" style="margin-top:20px;">

@@ -48,7 +48,7 @@
 				<div class="col-xs-5">
 					<div class="logo">
 						<h1>
-							<a href="#">会计基础在线考试系统——后台管理</a>
+							<a href="#">出纳实务训练在线考试系统——后台管理</a>
 						</h1>
 						<div class="hmeta"></div>
 					</div>
