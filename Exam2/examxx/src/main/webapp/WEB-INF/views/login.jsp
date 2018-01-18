@@ -91,7 +91,7 @@ String basePath = request.getScheme() + "://"
 
 					<div class="col-md-12">
 						<div class="lrform">
-							<h5>登陆Exam++</h5>
+							<h5>登陆财经法规与职业道德学习系统</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">
