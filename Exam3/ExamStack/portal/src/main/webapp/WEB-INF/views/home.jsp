@@ -123,19 +123,19 @@ String basePath = request.getScheme() + "://"
 							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa Example of hand-o-right"></i>会员中心</a>
+							<a href="student/usercenter"><i class="fa fa-hand-o-right"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa  Example of hand-o-right"></i>在线课程</a>
+							<a href="training-list"><i class="fa  fa-hand-o-right"></i>在线课程</a>
 						</li>
 						<li>
-							<a href="student/practice-list"><i class="fa Example of hand-o-right"></i>在线练习</a>
+							<a href="student/practice-list"><i class="fa fa-hand-o-right"></i>在线练习</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa Example of hand-o-right"></i>在线考试</a>
+							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa Example of hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>
@@ -188,7 +188,7 @@ String basePath = request.getScheme() + "://"
 				<div class="row">
 					<a class="select-test col-xs-4 home-link-anchor" href="student/usercenter">
 						<div class="select-test-icon">
-							<i class="fa Example of hand-o-right"></i>
+							<i class="fa fa-hand-o-right"></i>
 	
 						</div> <h3> 会员中心 </h3>
 						<p>

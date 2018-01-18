@@ -118,13 +118,13 @@ String basePath = request.getScheme() + "://"
 							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
 						</li>
 						<li class="active">
-							<a href="start-exam"><i class="fa Example of hand-o-right"></i>培训和会员中心</a>
+							<a href="start-exam"><i class="fa fa-hand-o-right"></i>培训和会员中心</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa Example of hand-o-right"></i>在线考试</a>
+							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa Example of hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>

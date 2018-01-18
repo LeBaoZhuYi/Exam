@@ -82,19 +82,19 @@ String basePath = request.getScheme() + "://"
 							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa Example of hand-o-right"></i>会员中心</a>
+							<a href="student/usercenter"><i class="fa fa-hand-o-right"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa  Example of hand-o-right"></i>在线课程</a>
+							<a href="training-list"><i class="fa  fa-hand-o-right"></i>在线课程</a>
 						</li>
 						<li class="active">
-							<a href="student/practice-list"><i class="fa Example of hand-o-right"></i>在线练习</a>
+							<a href="student/practice-list"><i class="fa fa-hand-o-right"></i>在线练习</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa Example of hand-o-right"></i>在线考试</a>
+							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa Example of hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>
@@ -109,7 +109,7 @@ String basePath = request.getScheme() + "://"
 				<div class="row">
 						<div class="col-xs-12">
 							<div style="border-bottom: 1px solid #ddd;">
-							<h3 class="title"><i class="fa Example of hand-o-right"></i>在线课程</h3>
+							<h3 class="title"><i class="fa fa-hand-o-right"></i>在线课程</h3>
 							
 							</div>
 							<div id="student/practice-list">
