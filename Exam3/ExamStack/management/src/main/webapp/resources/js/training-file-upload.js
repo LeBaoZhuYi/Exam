@@ -21,7 +21,7 @@ var question_upload_img = {
 			$("#uploadify").uploadify({
 				
 				'debug'	 : false,
-				'buttonText'	: '点击上传',
+				'buttonText'	: 'test',
 				'buttonCursor'	: 'pointer',
 				'uploader'	 : document.getElementsByTagName('base')[0].href + 'secure/upload-uploadify-file/',
 				'swf'	 : document.getElementsByTagName('base')[0].href + 'resources/js/uploadify/uploadify.swf',

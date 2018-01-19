@@ -106,8 +106,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 							</c:when>
 							<c:otherwise>
-								<%--<a class="btn btn-primary" href="user-register">用户注册</a>--%>
-								<%--<a class="btn btn-success" href="user-login-page">登录</a>--%>
+								<a class="btn btn-primary" href="user-register">用户注册</a>
+								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
 					</div>
@@ -121,22 +121,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 					<ul class="nav navbar-nav">
 						<li>
-							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
+							<a href="home"><i class="fa fa-home"></i>主页</a>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa fa-hand-o-right"></i>会员中心</a>
+							<a href="student/practice-list"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa  fa-hand-o-right"></i>在线课程</a>
+							<a href="exam-list"><i class="fa  fa-paper-plane-o"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/practice-list"><i class="fa fa-hand-o-right"></i>在线练习</a>
+							<a href="training-list"><i class="fa fa-book"></i>培训资料</a>
 						</li>
 						<li class="active">
-							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>
@@ -156,7 +156,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="col-xs-2">
 						<ul class="nav default-sidenav">
 							<li class="active">
-								<a> <i class="fa fa-hand-o-right"></i> 用户中心 </a>
+								<a> <i class="fa fa-dashboard"></i> 用户中心 </a>
 							</li>
 							<li>
 								<a href="student/analysis"> <i class="fa fa-bar-chart-o"></i> 统计分析 </a>
@@ -165,14 +165,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<a href="student/exam-history"> <i class="fa fa-history"></i> 考试历史 </a>
 							</li>
 							<li>
-								<a href="student/training-history"> <i class="fa fa-hand-o-right"></i> 培训历史 </a>
+								<a href="student/training-history"> <i class="fa fa-book"></i> 培训历史 </a>
 							</li>
 							
 						</ul>
 					</div>
 					<div class="col-xs-10">
 						<div class="page-header">
-							<h1><i class="fa fa-hand-o-right"></i> 用户中心</h1>
+							<h1><i class="fa fa-dashboard"></i> 用户中心</h1>
 						</div>
 						<div class="page-content row">
 							<div class="col-xs-4">
@@ -261,7 +261,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		$("#field-switch").val("${fieldId}");
 		$("#field-switch").change(function(){
-			window.location.href="exam-list/"+ $(this).val();
+			window.location.href="student/usercenter/"+ $(this).val();
 		});
 		
 			

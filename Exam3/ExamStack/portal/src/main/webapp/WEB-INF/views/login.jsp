@@ -14,7 +14,7 @@ String basePath = request.getScheme() + "://"
 		<base href="<%=basePath%>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>出纳实务训练学习系统</title>
+		<title>ExamStack 登录系统</title>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
@@ -52,8 +52,8 @@ String basePath = request.getScheme() + "://"
 								</div>
 							</c:when>
 							<c:otherwise>
-								<%--<a class="btn btn-primary" href="user-register">用户注册</a>--%>
-								<%--<a class="btn btn-success" href="user-login-page">登录</a>--%>
+								<a class="btn btn-primary" href="user-register">用户注册</a>
+								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
 					</div>
@@ -68,22 +68,22 @@ String basePath = request.getScheme() + "://"
 				role="navigation">
 					<ul class="nav navbar-nav">
 						<li>
-							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
+							<a href="home"><i class="fa fa-home"></i>主页</a>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa fa-hand-o-right"></i>会员中心</a>
+							<a href="student/practice-list"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa  fa-hand-o-right"></i>在线课程</a>
+							<a href="exam-list"><i class="fa  fa-paper-plane-o"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/practice-list"><i class="fa fa-hand-o-right"></i>在线练习</a>
+							<a href="training-list"><i class="fa fa-book"></i>培训资料</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>
@@ -99,7 +99,7 @@ String basePath = request.getScheme() + "://"
 
 					<div class="col-md-12">
 						<div class="lrform">
-							<h5>登陆出纳实务训练学习系统——学生端</h5>
+							<h5>登陆出纳实务学习系统——学生端</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">

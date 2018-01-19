@@ -105,8 +105,8 @@ String basePath = request.getScheme() + "://"
 								</div>
 							</c:when>
 							<c:otherwise>
-								<%--<a class="btn btn-primary" href="user-register">用户注册</a>--%>
-								<%--<a class="btn btn-success" href="user-login-page">登录</a>--%>
+								<a class="btn btn-primary" href="user-register">用户注册</a>
+								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
 					</div>
@@ -120,22 +120,22 @@ String basePath = request.getScheme() + "://"
 				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
+							<a href="home"><i class="fa fa-home"></i>主页</a>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa fa-hand-o-right"></i>会员中心</a>
+							<a href="student/practice-list"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa  fa-hand-o-right"></i>在线课程</a>
+							<a href="exam-list"><i class="fa  fa-paper-plane-o"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/practice-list"><i class="fa fa-hand-o-right"></i>在线练习</a>
+							<a href="training-list"><i class="fa fa-book"></i>培训资料</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
 					</ul>
 				</nav>
@@ -186,20 +186,20 @@ String basePath = request.getScheme() + "://"
 		<div class="content" style="padding:30px 0 0 0;">
 			<div class="container">
 				<div class="row">
-					<a class="select-test col-xs-4 home-link-anchor" href="student/usercenter">
+					<a class="select-test col-xs-4 home-link-anchor" href="student/practice-list">
 						<div class="select-test-icon">
-							<i class="fa fa-hand-o-right"></i>
+							<i class="fa fa-book"></i>
 	
-						</div> <h3> 会员中心 </h3>
+						</div> <h3> 试题练习 </h3>
 						<p>
 							<%--您可以免费获取对应专业的培训视频或者文档资料，通过在线练习可以考察您的知识掌握程度。--%>
 							您可以通过答题检验您的知识点掌握情况
 						</p> 
 					</a>
-					<a class="select-test col-xs-4 home-link-anchor" href="training-list">
+					<a class="select-test col-xs-4 home-link-anchor" href="exam-list">
 						<div class="select-test-icon">
 							<i class="fa fa-trophy"></i>
-						</div> <h3> 在线课程 </h3>
+						</div> <h3> 在线考试 </h3>
 						<p>
 							参加正式或者模拟考试
 							<%--，您的教师可以发布正式的考试，您也可以主动申请这些考试--%>
@@ -222,94 +222,94 @@ String basePath = request.getScheme() + "://"
 				</div>
 			</div>
 		</div>
-		<div class="content" style="padding:30px 0 100px 0;background-color: rgb(246, 249, 250);">
-			<div class="container">
-				<div style="margin-bottom: 10px;">
-					<h3>专业领域</h3>
-					<%--<p>--%>
-						<%--我们提供多种专业课程供你学习--%>
-					<%--</p>--%>
-				</div>
-				<div class="row">
-					<a class="field-category-div col-xs-3 home-link-anchor">
-					<div class="field-category-title" style="background-color: #E97051;">
-						<div class="field-category-inner">
-							<i class="fa fa-yen"></i>
-						</div>
-						<div class="field-category-text ">
-							<p>
-								出纳实务训练知识
-							</p>
-						</div>
-					</div>
-					<%--<div class="field-category-footer">--%>
-						<%--<div class="field-category-footer-sub">--%>
-							<%--<p class="field-student-subtitle">--%>
-								<%--医药行业考试--%>
-							<%--</p>--%>
-						<%--</div>--%>
-						<%--<div class="field-category-footer-sub">--%>
-							<%--<i class="fa fa-users"></i>--%>
-							<%--<span class="field-student-num">412</span>--%>
-
-							<%--名学员--%>
-						<%--</div>--%>
-
-					<%--</div> </a>--%>
+		<%--<div class="content" style="padding:30px 0 100px 0;background-color: rgb(246, 249, 250);">--%>
+			<%--<div class="container">--%>
+				<%--<div style="margin-bottom: 10px;">--%>
+					<%--<h3>专业领域</h3>--%>
+					<%--&lt;%&ndash;<p>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;我们提供多种专业课程供你学习&ndash;%&gt;--%>
+					<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
+				<%--</div>--%>
+				<%--<div class="row">--%>
 					<%--<a class="field-category-div col-xs-3 home-link-anchor">--%>
-					<%--<div class="field-category-title" style="background-color: #5C78B9;">--%>
+					<%--<div class="field-category-title" style="background-color: #E97051;">--%>
 						<%--<div class="field-category-inner">--%>
-							<%--<i class="fa fa-trophy"></i>--%>
+							<%--<i class="fa fa-yen"></i>--%>
 						<%--</div>--%>
 						<%--<div class="field-category-text ">--%>
 							<%--<p>--%>
-								<%--公务员申论--%>
+								<%--会计基础知识--%>
 							<%--</p>--%>
 						<%--</div>--%>
 					<%--</div>--%>
-					<%--<div class="field-category-footer">--%>
-						<%--<div class="field-category-footer-sub">--%>
-							<%--<p class="field-student-subtitle">--%>
-								<%--公务员申论--%>
-							<%--</p>--%>
+					<%--&lt;%&ndash;<div class="field-category-footer">&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<p class="field-student-subtitle">&ndash;%&gt;--%>
+								<%--&lt;%&ndash;医药行业考试&ndash;%&gt;--%>
+							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<i class="fa fa-users"></i>&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<span class="field-student-num">412</span>&ndash;%&gt;--%>
 
-						<%--</div>--%>
-						<%--<div class="field-category-footer-sub">--%>
-							<%--<i class="fa fa-users"></i>--%>
-							<%--<span class="field-student-num">2143</span>--%>
-							<%--名学员--%>
-						<%--</div>--%>
+							<%--&lt;%&ndash;名学员&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
 
-					<%--</div> </a>--%>
-					<%--<a class="field-category-div col-xs-3 home-link-anchor">--%>
-					<%--<div class="field-category-title" style="background-color: #5BA276;">--%>
-						<%--<div class="field-category-inner">--%>
-							<%--<i class="fa fa-car"></i>--%>
-						<%--</div>--%>
-						<%--<div class="field-category-text ">--%>
-							<%--<p>--%>
-								<%--驾校考试科目一--%>
-							<%--</p>--%>
-						<%--</div>--%>
-					<%--</div>--%>
-					<%--<div class="field-category-footer">--%>
-						<%--<div class="field-category-footer-sub">--%>
-							<%--<p class="field-student-subtitle">--%>
-								<%--驾校考试科目一--%>
-							<%--</p>--%>
+					<%--&lt;%&ndash;</div> </a>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<a class="field-category-div col-xs-3 home-link-anchor">&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<div class="field-category-title" style="background-color: #5C78B9;">&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-inner">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<i class="fa fa-trophy"></i>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-text ">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<p>&ndash;%&gt;--%>
+								<%--&lt;%&ndash;公务员申论&ndash;%&gt;--%>
+							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<div class="field-category-footer">&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<p class="field-student-subtitle">&ndash;%&gt;--%>
+								<%--&lt;%&ndash;公务员申论&ndash;%&gt;--%>
+							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
 
-						<%--</div>--%>
-						<%--<div class="field-category-footer-sub">--%>
-							<%--<i class="fa fa-users"></i>--%>
-							<%--<span class="field-student-num">1213</span>--%>
-							<%--名学员--%>
-						<%--</div>--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<i class="fa fa-users"></i>&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<span class="field-student-num">2143</span>&ndash;%&gt;--%>
+							<%--&lt;%&ndash;名学员&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
 
-					<%--</div> --%>
-					</a>
-				</div>
-			</div>
-		</div>
+					<%--&lt;%&ndash;</div> </a>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<a class="field-category-div col-xs-3 home-link-anchor">&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<div class="field-category-title" style="background-color: #5BA276;">&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-inner">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<i class="fa fa-car"></i>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-text ">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<p>&ndash;%&gt;--%>
+								<%--&lt;%&ndash;驾校考试科目一&ndash;%&gt;--%>
+							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<div class="field-category-footer">&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<p class="field-student-subtitle">&ndash;%&gt;--%>
+								<%--&lt;%&ndash;驾校考试科目一&ndash;%&gt;--%>
+							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
+
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<i class="fa fa-users"></i>&ndash;%&gt;--%>
+							<%--&lt;%&ndash;<span class="field-student-num">1213</span>&ndash;%&gt;--%>
+							<%--&lt;%&ndash;名学员&ndash;%&gt;--%>
+						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+					<%--&lt;%&ndash;</div> &ndash;%&gt;--%>
+					<%--</a>--%>
+				<%--</div>--%>
+			<%--</div>--%>
+		<%--</div>--%>
 		<div class="content" style="padding:30px 0 100px 0;">
 			<c:if test="${fn:length(newsList) > 0 }">
 				<%--<div class="container">--%>

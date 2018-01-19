@@ -64,8 +64,8 @@ a.join-practice-btn {
 								</div>
 							</c:when>
 							<c:otherwise>
-								<%--<a class="btn btn-primary" href="user-register">用户注册</a>--%>
-								<%--<a class="btn btn-success" href="user-login-page">登录</a>--%>
+								<a class="btn btn-primary" href="user-register">用户注册</a>
+								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 					</c:choose>
 				</div>
@@ -80,22 +80,22 @@ a.join-practice-btn {
 				role="navigation">
 				<ul class="nav navbar-nav">
 						<li>
-							<%--<a href="home"><i class="fa fa-home"></i>主页</a>--%>
+							<a href="home"><i class="fa fa-home"></i>主页</a>
 						</li>
 						<li class="active">
-							<a href="student/usercenter"><i class="fa fa-hand-o-right"></i>会员中心</a>
+							<a href="student/practice-list"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li>
-							<a href="training-list"><i class="fa  fa-hand-o-right"></i>在线课程</a>
+							<a href="exam-list"><i class="fa  fa-paper-plane-o"></i>在线考试</a>
 						</li>
 						<li>
-							<a href="student/practice-list"><i class="fa fa-hand-o-right"></i>在线练习</a>
+							<a href="training-list"><i class="fa fa-book"></i>培训资料</a>
 						</li>
 						<li>
-							<a href="exam-list"><i class="fa fa-hand-o-right"></i>在线考试</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
 						</li>
 						<li>
-							<a href="student/setting"><i class="fa fa-hand-o-right"></i>个人设置</a>
+							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
 					</ul>
 			</nav>
@@ -110,7 +110,7 @@ a.join-practice-btn {
 		<div class="container">
 			<ul class="nav nav-pills " style="margin: 20px 0;">
 				<c:forEach items="${fieldList }" var="item">
-					<li role="presentation" <c:if test="${item.fieldId == fieldId }"> class="active"</c:if>><a href="student/usercenter?fieldId=${item.fieldId }">${item.fieldName }</a></li>
+					<li role="presentation" <c:if test="${item.fieldId == fieldId }"> class="active"</c:if>><a href="student/practice-list?fieldId=${item.fieldId }">${item.fieldName }</a></li>
 				</c:forEach>
 			</ul>
 			<div class="row">
@@ -195,7 +195,7 @@ a.join-practice-btn {
 						<h3 class="title">
 							<i class="fa fa-superscript"></i> 随机练习
 						</h3>
-						<p>从题库中随机取出会员中心</p>
+						<p>从题库中随机取出试题练习</p>
 
 					</div>
 					<a class="btn btn-success " href="student/practice-test/${fieldId }">随机来20道 </i>

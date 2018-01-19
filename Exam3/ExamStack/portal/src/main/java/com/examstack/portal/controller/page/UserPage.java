@@ -81,7 +81,7 @@ public class UserPage {
 	@RequestMapping(value = { "/" }, method = RequestMethod.GET)
 	public String homePage(Model model) {
 		
-		return "redirect:practice";
+		return "redirect:home";
 	}
 	
 	@RequestMapping(value = { "home" }, method = RequestMethod.GET)
@@ -101,11 +101,11 @@ public class UserPage {
 
 		if (SecurityContextHolder.getContext().getAuthentication() == null){
 			//this.appendBaseInfo(model);
-			return "practice";
+			return "home";
 		}
 		if (SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString().endsWith("anonymousUser")){
 			//this.appendBaseInfo(model);
-			return "practice";
+			return "home";
 		}
 		
 		UserInfo userInfo = (UserInfo) SecurityContextHolder.getContext()
@@ -116,7 +116,7 @@ public class UserPage {
 		}
 		
 		
-		return "practice";
+		return "home";
 	}
 	
 	@RequestMapping(value = { "student/setting" }, method = RequestMethod.GET)
