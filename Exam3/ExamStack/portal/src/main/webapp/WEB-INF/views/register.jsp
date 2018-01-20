@@ -21,7 +21,7 @@
 <!--
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		-->
-<title>ExamStack</title>
+<title>沈阳职业技术学院</title>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -176,7 +176,7 @@
 									<div class="col-md-9 col-md-offset-3">
 										<label class="checkbox-inline"> <input type="checkbox"
 											id="inlineCheckbox1" value="agree"> <a>
-												同意ExamStack条款</a>
+												同意出纳实务学习系统条款</a>
 										</label> <span class="form-message"></span>
 									</div>
 
