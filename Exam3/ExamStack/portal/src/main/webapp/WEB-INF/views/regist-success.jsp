@@ -14,7 +14,7 @@ String basePath = request.getScheme() + "://"
 		<base href="<%=basePath%>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>ExamStack 注册成功</title>
+		<title>沈阳职业技术学院</title>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
@@ -91,7 +91,7 @@ String basePath = request.getScheme() + "://"
 			<!-- Slider (Flex Slider) -->
 
 			<div class="container" style="height:500px;margin-top: 50px;">
-				<h2>欢迎注册ExamStack</h2>
+				<h2>欢迎注册出纳实务训练学习系统</h2>
 				<p class="big grey">
 					您的账号为<span>${username}</span>
 				</p>

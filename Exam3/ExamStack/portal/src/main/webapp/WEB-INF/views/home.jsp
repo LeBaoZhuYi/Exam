@@ -16,7 +16,7 @@ String basePath = request.getScheme() + "://"
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>ExamStack</title>
+		<title>沈阳职业技术学院</title>
 		<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -157,7 +157,9 @@ String basePath = request.getScheme() + "://"
 								<!-- Left column -->
 								<div class="col-l">
 									<p style="text-indent:2em;">
-										当一个人熬过了苦难的底线，对于世间的冷暖毫无知觉，并且韶华已逝逼迫她不能再在无用的事情上浪费哪怕一分钟时间的时候，就真的只剩下所谓成功了。因为其中的代价，已经早早透支在青年时代，并且其庞大的伤害与遗憾，并非一句貌似豪迈而动情的青春无悔便可以弥补——即使于一个时代而言 。 ——七 堇年
+										天行健，君子以自强不息。 ——《周易·乾》</p>
+
+									<p style="text-indent:2em;">夫《易》，开物成务，冒天下之道，如斯而已者也。 ——《易·系辞上》
 									</p>
 									<%--<p style="text-indent:2em;">--%>
 										<%--软件采用GPL协议，完全开放且免费，并且有固定的开发团队提供技术支持--%>
@@ -222,94 +224,94 @@ String basePath = request.getScheme() + "://"
 				</div>
 			</div>
 		</div>
-		<%--<div class="content" style="padding:30px 0 100px 0;background-color: rgb(246, 249, 250);">--%>
-			<%--<div class="container">--%>
-				<%--<div style="margin-bottom: 10px;">--%>
-					<%--<h3>专业领域</h3>--%>
-					<%--&lt;%&ndash;<p>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;我们提供多种专业课程供你学习&ndash;%&gt;--%>
-					<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
-				<%--</div>--%>
-				<%--<div class="row">--%>
+		<div class="content" style="padding:30px 0 100px 0;background-color: rgb(246, 249, 250);">
+			<div class="container">
+				<div style="margin-bottom: 10px;">
+					<h3>专业领域</h3>
+					<%--<p>--%>
+						<%--我们提供多种专业课程供你学习--%>
+					<%--</p>--%>
+				</div>
+				<div class="row">
+					<a class="field-category-div col-xs-3 home-link-anchor">
+					<div class="field-category-title" style="background-color: #396ae9;">
+						<div class="field-category-inner">
+							<i class="fa fa-yen"></i>
+						</div>
+						<div class="field-category-text ">
+							<p>
+								出纳实务
+							</p>
+						</div>
+					</div>
+					<%--<div class="field-category-footer">--%>
+						<%--<div class="field-category-footer-sub">--%>
+							<%--<p class="field-student-subtitle">--%>
+								<%--医药行业考试--%>
+							<%--</p>--%>
+						<%--</div>--%>
+						<%--<div class="field-category-footer-sub">--%>
+							<%--<i class="fa fa-users"></i>--%>
+							<%--<span class="field-student-num">412</span>--%>
+
+							<%--名学员--%>
+						<%--</div>--%>
+
+					<%--</div> </a>--%>
 					<%--<a class="field-category-div col-xs-3 home-link-anchor">--%>
-					<%--<div class="field-category-title" style="background-color: #E97051;">--%>
+					<%--<div class="field-category-title" style="background-color: #5C78B9;">--%>
 						<%--<div class="field-category-inner">--%>
-							<%--<i class="fa fa-yen"></i>--%>
+							<%--<i class="fa fa-trophy"></i>--%>
 						<%--</div>--%>
 						<%--<div class="field-category-text ">--%>
 							<%--<p>--%>
-								<%--会计基础知识--%>
+								<%--公务员申论--%>
 							<%--</p>--%>
 						<%--</div>--%>
 					<%--</div>--%>
-					<%--&lt;%&ndash;<div class="field-category-footer">&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<p class="field-student-subtitle">&ndash;%&gt;--%>
-								<%--&lt;%&ndash;医药行业考试&ndash;%&gt;--%>
-							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<i class="fa fa-users"></i>&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<span class="field-student-num">412</span>&ndash;%&gt;--%>
+					<%--<div class="field-category-footer">--%>
+						<%--<div class="field-category-footer-sub">--%>
+							<%--<p class="field-student-subtitle">--%>
+								<%--公务员申论--%>
+							<%--</p>--%>
 
-							<%--&lt;%&ndash;名学员&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--</div>--%>
+						<%--<div class="field-category-footer-sub">--%>
+							<%--<i class="fa fa-users"></i>--%>
+							<%--<span class="field-student-num">2143</span>--%>
+							<%--名学员--%>
+						<%--</div>--%>
 
-					<%--&lt;%&ndash;</div> </a>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<a class="field-category-div col-xs-3 home-link-anchor">&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<div class="field-category-title" style="background-color: #5C78B9;">&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-inner">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<i class="fa fa-trophy"></i>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-text ">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<p>&ndash;%&gt;--%>
-								<%--&lt;%&ndash;公务员申论&ndash;%&gt;--%>
-							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<div class="field-category-footer">&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<p class="field-student-subtitle">&ndash;%&gt;--%>
-								<%--&lt;%&ndash;公务员申论&ndash;%&gt;--%>
-							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
+					<%--</div> </a>--%>
+					<%--<a class="field-category-div col-xs-3 home-link-anchor">--%>
+					<%--<div class="field-category-title" style="background-color: #5BA276;">--%>
+						<%--<div class="field-category-inner">--%>
+							<%--<i class="fa fa-car"></i>--%>
+						<%--</div>--%>
+						<%--<div class="field-category-text ">--%>
+							<%--<p>--%>
+								<%--驾校考试科目一--%>
+							<%--</p>--%>
+						<%--</div>--%>
+					<%--</div>--%>
+					<%--<div class="field-category-footer">--%>
+						<%--<div class="field-category-footer-sub">--%>
+							<%--<p class="field-student-subtitle">--%>
+								<%--驾校考试科目一--%>
+							<%--</p>--%>
 
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<i class="fa fa-users"></i>&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<span class="field-student-num">2143</span>&ndash;%&gt;--%>
-							<%--&lt;%&ndash;名学员&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+						<%--</div>--%>
+						<%--<div class="field-category-footer-sub">--%>
+							<%--<i class="fa fa-users"></i>--%>
+							<%--<span class="field-student-num">1213</span>--%>
+							<%--名学员--%>
+						<%--</div>--%>
 
-					<%--&lt;%&ndash;</div> </a>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<a class="field-category-div col-xs-3 home-link-anchor">&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<div class="field-category-title" style="background-color: #5BA276;">&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-inner">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<i class="fa fa-car"></i>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-text ">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<p>&ndash;%&gt;--%>
-								<%--&lt;%&ndash;驾校考试科目一&ndash;%&gt;--%>
-							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<div class="field-category-footer">&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<p class="field-student-subtitle">&ndash;%&gt;--%>
-								<%--&lt;%&ndash;驾校考试科目一&ndash;%&gt;--%>
-							<%--&lt;%&ndash;</p>&ndash;%&gt;--%>
-
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<div class="field-category-footer-sub">&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<i class="fa fa-users"></i>&ndash;%&gt;--%>
-							<%--&lt;%&ndash;<span class="field-student-num">1213</span>&ndash;%&gt;--%>
-							<%--&lt;%&ndash;名学员&ndash;%&gt;--%>
-						<%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-
-					<%--&lt;%&ndash;</div> &ndash;%&gt;--%>
-					<%--</a>--%>
-				<%--</div>--%>
-			<%--</div>--%>
-		<%--</div>--%>
+					<%--</div> --%>
+					</a>
+				</div>
+			</div>
+		</div>
 		<div class="content" style="padding:30px 0 100px 0;">
 			<c:if test="${fn:length(newsList) > 0 }">
 				<%--<div class="container">--%>
