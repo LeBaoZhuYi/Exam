@@ -1,43 +1,100 @@
 <template>
     <my-page title="HTML">
-        <h2>HTML/HTML5 教程</h2>
-
-        <h3>知识点</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <div>应该通过 iframe 嵌入的方式</div>
-        <h3>工具</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-        <ui-article>
-            <ui-markdown :content="exampleFormCode"></ui-markdown>
-            <!--<ui-demo :code="demoCode">-->
-                <!--<demo></demo>-->
-            <!--</ui-demo>-->
-        </ui-article>
-
+      <div>
+        <mu-table :fixedFooter="fixedFooter" :fixedHeader="fixedHeader" :height="height"
+                  :enableSelectAll="enableSelectAll" :multiSelectable="multiSelectable"
+                  :selectable="selectable" :showCheckbox="showCheckbox">
+          <mu-thead slot="header">
+            <mu-tr>
+              <mu-th tooltip="ID">ID</mu-th>
+              <mu-th tooltip="名称">Name</mu-th>
+              <mu-th tooltip="状态">Status</mu-th>
+            </mu-tr>
+          </mu-thead>
+          <mu-tbody>
+            <mu-tr v-for="item,index in tableData"  :key="index" :selected="item.selected">
+              <mu-td>{{index + 1}}</mu-td>
+              <mu-td>{{item.name}}</mu-td>
+              <mu-td>{{item.status}}</mu-td>
+            </mu-tr>
+          </mu-tbody>
+          <mu-tfoot slot="footer">
+            <mu-tr>
+              <mu-td>ID</mu-td>
+              <mu-td>Name</mu-td>
+              <mu-td>Status</mu-td>
+            </mu-tr>
+          </mu-tfoot>
+        </mu-table>
+        <div class="demo-table-settings">
+          <h3>设置</h3>
+          <mu-text-field v-model.lazy="height" label="table的高度"/><br/>
+          <mu-switch labelLeft label="固定表头" v-model="fixedHeader"/><br/>
+          <mu-switch labelLeft label="固定表尾" v-model="fixedFooter"/><br/>
+          <mu-switch labelLeft label="可以被选择" v-model="selectable"/><br/>
+          <mu-switch labelLeft label="可以多选" v-model="multiSelectable"/><br/>
+          <mu-switch labelLeft label="可以选择全部" v-model="enableSelectAll"/><br/>
+          <mu-switch labelLeft label="显示复选框" v-model="showCheckbox"/><br/>
+        </div>
+      </div>
     </my-page>
 </template>
-
 <script>
-    /* eslint-disable */
-    import demoCode from '!raw-loader!./demo.vue'
-    import exampleFormCode from 'raw-loader!./README.md'
-
-    export default {
-        data () {
-            return {
-                exampleFormCode: exampleFormCode,
-                demoCode: demoCode
-            }
-        }
+  export default {
+    data () {
+      return {
+        tableData: [
+          {
+            name: 'John Smith',
+            status: 'Employed',
+            selected: true
+          },
+          {
+            name: 'Randal White',
+            status: 'Unemployed'
+          },
+          {
+            name: 'Stephanie Sanders',
+            status: 'Employed',
+            selected: true
+          },
+          {
+            name: 'Steve Brown',
+            status: 'Employed'
+          },
+          {
+            name: 'Joyce Whitten',
+            status: 'Employed'
+          },
+          {
+            name: 'Samuel Roberts',
+            status: 'Employed'
+          },
+          {
+            name: 'Adam Moore',
+            status: 'Employed'
+          }
+        ],
+        fixedHeader: true,
+        fixedFooter: true,
+        selectable: true,
+        multiSelectable: true,
+        enableSelectAll: false,
+        showCheckbox: true,
+        height: '300px'
+      }
     }
+  }
 </script>
 
+
 <style lang="scss" scoped>
+
+  .demo-table-settings{
+    width: 200px;
+    overflow: hidden;
+    margin: 20px auto 0px;
+  }
     .ui-medal {
         width: 282px;
         height: 375px;

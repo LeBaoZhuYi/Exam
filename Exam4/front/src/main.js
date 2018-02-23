@@ -12,6 +12,9 @@ import 'yunser-ui-vue/dist/yunser-ui.css'
 import './scss/main.scss'
 import ui from './components/index'
 import 'nprogress/nprogress.css'
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
+Vue.use(MuseUI)
 
 // 全部加载
 Vue.use(YunserUI)
