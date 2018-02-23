@@ -25,80 +25,85 @@
             return {
                 items: [
                     {
-                        icon: 'el-icon-setting',
-                        index: 'readme',
-                        title: '自述'
-                    },
-                    {
                         icon: 'el-icon-menu',
-                        index: '2',
-                        title: '表格',
+                        index: '1',
+                        title: '学生管理',
                         subs: [
                             {
-                                index: 'basetable',
-                                title: '基础表格'
+                                index: 'student-table',
+                                title: '学生列表'
                             },
                             {
-                                index: 'vuetable',
-                                title: 'Vue表格组件'
+                                index: 'group-table',
+                                title: '学生分组列表'
+                            },
+                            {
+                                index: 'history-table',
+                                title: '用户课程历史表'
+                            }
+                        ]
+                    },
+                    {
+                        icon: 'el-icon-bell',
+                        index: '2',
+                        title: '视频管理',
+                        subs: [
+                            {
+                                index: 'video-table',
+                                title: '视频列表'
+                            },
+                            {
+                                index: 'class-table',
+                                title: '课程时间表'
                             }
                         ]
                     },
                     {
                         icon: 'el-icon-date',
                         index: '3',
-                        title: '表单',
+                        title: '管理操作',
                         subs: [
                             {
-                                index: 'baseform',
-                                title: '基本表单'
+                                index: 'add-video',
+                                title: '添加视频'
                             },
                             {
-                                index: 'vueeditor',
-                                title: '编辑器'
+                                index: 'add-group',
+                                title: '添加分组'
                             },
                             {
-                                index: 'markdown',
-                                title: 'markdown'
+                                index: 'add-class',
+                                title: '添加课程'
                             },
                             {
-                                index: 'upload',
-                                title: '文件上传'
+                                index: 'add-student',
+                                title: '添加学生'
                             }
                         ]
-                    },
-                    {
-                        icon: 'el-icon-star-on',
-                        index: 'basecharts',
-                        title: '图表'
-                    },
-                    {
-                        icon: 'el-icon-upload2',
-                        index: 'drag',
-                        title: '拖拽'
                     }
                 ]
             }
         },
-        computed:{
-            onRoutes(){
-                return this.$route.path.replace('/','');
+        computed: {
+            onRoutes() {
+                // return this.$route.path.replace('/','');
             }
         }
     }
 </script>
 
 <style scoped>
-    .sidebar{
+    .sidebar {
         display: block;
         position: absolute;
         width: 250px;
         left: 0;
         top: 70px;
-        bottom:0;
+        bottom: 0;
         background: #2E363F;
     }
+
     .sidebar > ul {
-        height:100%;
+        height: 100%;
     }
 </style>

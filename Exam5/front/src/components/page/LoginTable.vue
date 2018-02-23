@@ -3,14 +3,14 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-menu"></i> 表格</el-breadcrumb-item>
-                <el-breadcrumb-item>基础表格</el-breadcrumb-item>
+                <el-breadcrumb-item>用户列表</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="handle-box">
             <el-button type="primary" icon="delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
-            <el-select v-model="select_cate" placeholder="筛选省份" class="handle-select mr10">
-                <el-option key="1" label="广东省" value="广东省"></el-option>
-                <el-option key="2" label="湖南省" value="湖南省"></el-option>
+            <el-select v-model="select_cate" placeholder="筛选选项" class="handle-select mr10">
+                <el-option key="1" label="选项一" value="选项一"></el-option>
+                <el-option key="2" label="选项二" value="选项二"></el-option>
             </el-select>
             <el-input v-model="select_word" placeholder="筛选关键词" class="handle-input mr10"></el-input>
             <el-button type="primary" icon="search" @click="search">搜索</el-button>
@@ -21,6 +21,8 @@
             </el-table-column>
             <el-table-column prop="name" label="姓名" width="120">
             </el-table-column>
+          <el-table-column prop="phone" label="电话" width="120">
+          </el-table-column>
             <el-table-column prop="address" label="地址" :formatter="formatter">
             </el-table-column>
             <el-table-column label="操作" width="180">
@@ -46,7 +48,7 @@
     export default {
         data() {
             return {
-                url: '/static/vuetable.json',
+                url: 'static/UserTable.json',
                 tableData: [],
                 cur_page: 1,
                 multipleSelection: [],
@@ -88,9 +90,9 @@
             },
             getData(){
                 let self = this;
-                // if(process.env.NODE_ENV === 'development'){
-                //     self.url = '/ms/table/list';
-                // };
+//                if(process.env.NODE_ENV === 'development'){
+//                    self.url = '/ms/table/list';
+//                };
                 self.$http.get(self.url, {page:self.cur_page}).then((res) => {
                     self.tableData = res.data.list;
                 })

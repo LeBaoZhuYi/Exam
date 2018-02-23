@@ -4,56 +4,65 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 export default new Router({
+    mode: 'history',
     routes: [
         {
             path: '/',
-            redirect: '/login'
+            redirect: '/admin/login'
         },
         {
-            path: '/readme',
+            path: '/admin/login',
+            component: resolve => require(['../components/page/Login.vue'], resolve)
+        },
+        {
+            path: '/admin',
+            redirect: '/admin/index'
+        },
+        {
+            path: '/admin',
             component: resolve => require(['../components/common/Home.vue'], resolve),
-            children:[
+            children: [
                 {
-                    path: '/',
+                    path: '/admin/index',
                     component: resolve => require(['../components/page/Readme.vue'], resolve)
                 },
                 {
-                    path: '/basetable',
-                    component: resolve => require(['../components/page/BaseTable.vue'], resolve)
+                    path: '/admin/student-table',
+                    component: resolve => require(['../components/page/StudentTable.vue'], resolve)
                 },
                 {
-                    path: '/vuetable',
-                    component: resolve => require(['../components/page/VueTable.vue'], resolve)     // vue-datasource组件
+                    path: '/admin/group-table',
+                    component: resolve => require(['../components/page/GroupTable.vue'], resolve)
                 },
                 {
-                    path: '/baseform',
-                    component: resolve => require(['../components/page/BaseForm.vue'], resolve)
+                    path: '/admin/history-table',
+                    component: resolve => require(['../components/page/HistoryTable.vue'], resolve)
                 },
                 {
-                    path: '/vueeditor',
-                    component: resolve => require(['../components/page/VueEditor.vue'], resolve)    // Vue-Quill-Editor组件
+                    path: '/admin/video-table',
+                    component: resolve => require(['../components/page/VideoTable.vue'], resolve)
                 },
                 {
-                    path: '/markdown',
-                    component: resolve => require(['../components/page/Markdown.vue'], resolve)     // Vue-Quill-Editor组件
+                    path: '/admin/class-table',
+                    component: resolve => require(['../components/page/ClassTable.vue'], resolve)
                 },
                 {
-                    path: '/upload',
-                    component: resolve => require(['../components/page/Upload.vue'], resolve)       // Vue-Core-Image-Upload组件
+                    path: '/admin/add-video',
+                    component: resolve => require(['../components/page/AddVideo.vue'], resolve)
                 },
                 {
-                    path: '/basecharts',
-                    component: resolve => require(['../components/page/BaseCharts.vue'], resolve)   // vue-schart组件
+                    path: '/admin/add-student',
+                    component: resolve => require(['../components/page/AddStudent.vue'], resolve)
                 },
                 {
-                    path: '/drag',
-                    component: resolve => require(['../components/page/DragList.vue'], resolve)    // 拖拽列表组件
+                    path: '/admin/add-class',
+                    component: resolve => require(['../components/page/AddClass.vue'], resolve)
+                },
+                {
+                    path: '/admin/add-group',
+                    component: resolve => require(['../components/page/AddGroup.vue'], resolve)       // Vue-Core-Image-Upload组件
                 }
             ]
-        },
-        {
-            path: '/login',
-            component: resolve => require(['../components/page/Login.vue'], resolve)
         },
     ]
 })
