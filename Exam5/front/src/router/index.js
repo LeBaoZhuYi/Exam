@@ -31,36 +31,36 @@ export default new Router({
                     component: resolve => require(['../components/page/StudentTable.vue'], resolve)
                 },
                 {
-                    path: '/admin/group-table',
-                    component: resolve => require(['../components/page/GroupTable.vue'], resolve)
-                },
-                {
                     path: '/admin/history-table',
                     component: resolve => require(['../components/page/HistoryTable.vue'], resolve)
                 },
                 {
-                    path: '/admin/video-table',
-                    component: resolve => require(['../components/page/VideoTable.vue'], resolve)
+                    path: '/admin/question-table',
+                    component: resolve => require(['../components/page/QuestionTable.vue'], resolve)
                 },
                 {
-                    path: '/admin/class-table',
-                    component: resolve => require(['../components/page/ClassTable.vue'], resolve)
+                    path: '/admin/paper-table',
+                    component: resolve => require(['../components/page/PaperTable.vue'], resolve)
                 },
                 {
-                    path: '/admin/add-video',
-                    component: resolve => require(['../components/page/AddVideo.vue'], resolve)
+                    path: '/admin/exam-table',
+                    component: resolve => require(['../components/page/ExamTable.vue'], resolve)
                 },
                 {
                     path: '/admin/add-student',
                     component: resolve => require(['../components/page/AddStudent.vue'], resolve)
                 },
                 {
-                    path: '/admin/add-class',
-                    component: resolve => require(['../components/page/AddClass.vue'], resolve)
+                    path: '/admin/add-question',
+                    component: resolve => require(['../components/page/AddQuestion.vue'], resolve)
                 },
                 {
-                    path: '/admin/add-group',
-                    component: resolve => require(['../components/page/AddGroup.vue'], resolve)       // Vue-Core-Image-Upload组件
+                    path: '/admin/add-paper',
+                    component: resolve => require(['../components/page/AddPaper.vue'], resolve)
+                },
+                {
+                    path: '/admin/add-exam',
+                    component: resolve => require(['../components/page/AddExam.vue'], resolve)
                 }
             ]
         },

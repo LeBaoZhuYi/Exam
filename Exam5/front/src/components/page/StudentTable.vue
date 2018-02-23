@@ -26,9 +26,6 @@
                 </el-table-column>
                 <el-table-column label="操作" width="180">
                     <template scope="scope">
-                        <el-button size="small"
-                                   @click="handleEdit(scope.$index, scope.row)">编辑
-                        </el-button>
                         <el-button size="small" type="danger"
                                    @click="handleDelete(scope.$index, scope.row)">删除
                         </el-button>
@@ -46,23 +43,6 @@
                     :total="total">
                 </el-pagination>
             </div>
-            <el-dialog title="修改学生信息" :visible.sync="dialogFormVisible">
-                <el-form :model="selectTable">
-                    <el-form-item label="学生名称" label-width="100px">
-                        <el-input v-model="selectTable.studyName" auto-complete="off"></el-input>
-                    </el-form-item>
-                    <el-form-item label="学生学号" label-width="100px">
-                        <el-input v-model="selectTable.studyId"></el-input>
-                    </el-form-item>
-                    <el-form-item label="登录账号" label-width="100px">
-                        <el-input v-model="selectTable.loginName"></el-input>
-                    </el-form-item>
-                </el-form>
-                <div slot="footer" class="dialog-footer">
-                    <el-button @click="dialogFormVisible = false">取 消</el-button>
-                    <el-button type="primary" @click="">确 定</el-button>
-                </div>
-            </el-dialog>
         </div>
     </div>
 </template>
@@ -75,7 +55,6 @@
                 total: 0,
                 currentPage: 1,
                 pageSize: 5,
-                dialogFormVisible: false,
                 selectTable: {},
                 select_cate: '',
                 select_word: '',
@@ -105,8 +84,7 @@
                     studyName: "123",
                     loginName: "456",
                     ctime: new Date()
-                }],
-                groupList: []
+                }]
             }
         },
         created() {
@@ -120,14 +98,12 @@
                 self.filtedTableData = self.allData.filter(function (d) {
                     let flag = false;
                     self.formmatObjectData(d);
-                    if (d.groupName.indexOf(self.select_cate) > -1) {
-                        Object.values(d).forEach(v => {
-                            if (v.indexOf(self.select_word) > -1) {
-                                flag = true;
-                                return;
-                            }
-                        });
-                    }
+                    Object.values(d).forEach(v => {
+                        if (v.indexOf(self.select_word) > -1) {
+                            flag = true;
+                            return;
+                        }
+                    });
                     if (flag) {
                         return d;
                     }
@@ -152,7 +128,6 @@
                                     })
                             }
                         });
-                        self.groupList = Array.from(groupMap.values());
                     } else if (response.data.status > 0) {
                         self.$message.error('获取分组列表失败！' + response.data.msg);
                     } else {
@@ -162,10 +137,6 @@
             },
             search() {
                 this.is_search = true;
-            },
-            handleEdit(index, row) {
-                this.dialogFormVisible = true;
-                this.selectTable = row;
             },
             handleDelete(index, row) {
                 this.$message.error('删除第' + (index + 1) + '行');

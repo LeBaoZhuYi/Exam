@@ -5,7 +5,8 @@
                 <template v-if="item.subs">
                     <el-submenu :index="item.index">
                         <template slot="title"><i :class="item.icon"></i>{{ item.title }}</template>
-                        <el-menu-item v-for="(subItem,i) in item.subs" :key="i" :index="subItem.index">{{ subItem.title }}
+                        <el-menu-item v-for="(subItem,i) in item.subs" :key="i" :index="subItem.index">{{ subItem.title
+                            }}
                         </el-menu-item>
                     </el-submenu>
                 </template>
@@ -34,27 +35,27 @@
                                 title: '学生列表'
                             },
                             {
-                                index: 'group-table',
-                                title: '学生分组列表'
-                            },
-                            {
                                 index: 'history-table',
-                                title: '用户课程历史表'
+                                title: '考试历史列表'
                             }
                         ]
                     },
                     {
                         icon: 'el-icon-bell',
                         index: '2',
-                        title: '视频管理',
+                        title: '试题管理',
                         subs: [
                             {
-                                index: 'video-table',
-                                title: '视频列表'
+                                index: 'question-table',
+                                title: '题目列表'
                             },
                             {
-                                index: 'class-table',
-                                title: '课程时间表'
+                                index: 'paper-table',
+                                title: '试卷列表'
+                            },
+                            {
+                                index: 'exam-table',
+                                title: '考试列表'
                             }
                         ]
                     },
@@ -64,20 +65,16 @@
                         title: '管理操作',
                         subs: [
                             {
-                                index: 'add-video',
-                                title: '添加视频'
+                                index: 'add-student',
+                                title: '添加学生'
                             },
                             {
-                                index: 'add-group',
+                                index: 'add-paper',
                                 title: '添加分组'
                             },
                             {
-                                index: 'add-class',
-                                title: '添加课程'
-                            },
-                            {
-                                index: 'add-student',
-                                title: '添加学生'
+                                index: 'add-exam',
+                                title: '添加考试'
                             }
                         ]
                     }
