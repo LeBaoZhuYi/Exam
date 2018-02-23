@@ -16,6 +16,6 @@
   }
 </script>
 
-<style lang="scss" scoped>
-@import '../../style/header';
-</style>
+<!--<style lang="scss" scoped>-->
+<!--@import '../../style/header';-->
+<!--</style>-->

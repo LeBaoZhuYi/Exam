@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-header></v-header>
+    <!--<v-header></v-header>-->
     <router-view></router-view>
   </div>
 </template>
@@ -19,6 +19,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "style/app";
-</style>
+<!--<style lang="scss">-->
+<!--@import "style/app";-->
+<!--</style>-->
