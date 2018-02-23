@@ -1,72 +1,106 @@
 <template>
-  <div>
-    <div class="crumbs">
-      <el-breadcrumb separator="/">
-        <el-breadcrumb-item><i class="el-icon-date"></i> 添加</el-breadcrumb-item>
-        <el-breadcrumb-item>添加课程</el-breadcrumb-item>
-      </el-breadcrumb>
-    </div>
-    <div class="form-box">
-      <el-form ref="form" :model="form" label-width="80px">
-        <el-form-item label="课程视频">
-          <el-select v-model="form.videoList" placeholder="请选择">
-            <el-option key="bbk" label="步步高" value="bbk"></el-option>
-          </el-select>
-        </el-form-item>
-        <el-form-item label="学生分组">
-          <el-select v-model="form.groupList" placeholder="请选择">
-            <el-option key="bbk" label="步步高" value="bbk"></el-option>
-          </el-select>
-        </el-form-item>
-        <el-form-item label="讲师">
-          <el-input v-model="form.teacherName"></el-input>
-        </el-form-item>
-        <el-form-item label="开始时间">
-          <el-col :span="11">
-            <el-date-picker type="date" placeholder="选择日期" v-model="form.startDate" style="width: 100%;"></el-date-picker>
-          </el-col>
-          <el-col class="line" :span="2">-</el-col>
-          <el-col :span="11">
-            <el-time-picker type="fixed-time" placeholder="选择时间" v-model="form.startTime"
-                            style="width: 100%;"></el-time-picker>
-          </el-col>
-        </el-form-item>
-        <el-form-item label="结束时间">
-          <el-col :span="11">
-            <el-date-picker type="date" placeholder="选择日期" v-model="form.endDate" style="width: 100%;"></el-date-picker>
-          </el-col>
-          <el-col class="line" :span="2">-</el-col>
-          <el-col :span="11">
-            <el-time-picker type="fixed-time" placeholder="选择时间" v-model="form.endTime"
-                            style="width: 100%;"></el-time-picker>
-          </el-col>
-        </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="onSubmit">提交</el-button>
-        </el-form-item>
-      </el-form>
-    </div>
+    <div>
+        <div class="crumbs">
+            <el-breadcrumb separator="/">
+                <el-breadcrumb-item><i class="el-icon-date"></i> 添加</el-breadcrumb-item>
+                <el-breadcrumb-item>添加试卷</el-breadcrumb-item>
+            </el-breadcrumb>
+        </div>
+        <el-alert
+            title="编号以英文逗号隔开"
+            type="warning"
+            close-text="知道了">
+        </el-alert>
+        <div class="form-box">
+            <el-form ref="form" :model="form" label-width="180px">
+                <el-form-item label="试卷名">
+                    <el-input v-model="form.paperTitle"></el-input>
+                </el-form-item>
+                <el-form-item label="单选题编号">
+                    <el-input v-model="form.questionAList"></el-input>
+                </el-form-item>
+                <el-form-item label="单选题每题分数">
+                    <el-input v-model="form.questionAScore"></el-input>
+                </el-form-item>
+                <el-form-item label="多选题编号">
+                    <el-input v-model="form.questionBList"></el-input>
+                </el-form-item>
+                <el-form-item label="多选题每题分数">
+                    <el-input v-model="form.questionBScore"></el-input>
+                </el-form-item>
+                <el-form-item label="填空题编号">
+                    <el-input v-model="form.questionCList"></el-input>
+                </el-form-item>
+                <el-form-item label="填空题每题分数">
+                    <el-input v-model="form.questionCScore"></el-input>
+                </el-form-item>
+                <el-form-item label="判断题编号">
+                    <el-input v-model="form.questionDList"></el-input>
+                </el-form-item>
+                <el-form-item label="判断题每题分数">
+                    <el-input v-model="form.questionDScore"></el-input>
+                </el-form-item>
+                <el-form-item label="简单题编号">
+                    <el-input v-model="form.questionEList"></el-input>
+                </el-form-item>
+                <el-form-item label="简答题每题分数">
+                    <el-input v-model="form.questionEScore"></el-input>
+                </el-form-item>
+                <el-form-item label="当前总分">
+                    <h1>{{allScore}}</h1>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary" @click="onSubmit">提交</el-button>
+                </el-form-item>
+            </el-form>
+        </div>
 
-  </div>
+    </div>
 </template>
 
 <script>
-  export default {
-    data: function () {
-      return {
-        form: {
-          loginName: "",
-          password: "",
-          stuName: "",
-          phone: "",
-          sex: ""
+    export default {
+        data: function () {
+            return {
+                form: {
+                    paperTitle: "",
+                    questionAList: "1,2,3",
+                    questionAScore: 0,
+                    questionBList: "2",
+                    questionBScore: 0,
+                    questionCList: "",
+                    questionCScore: 0,
+                    questionDList: "",
+                    questionDScore: 0,
+                    questionEList: "",
+                    questionEScore: 0
+                }
+            }
+        },
+        computed: {
+            allScore: function() {
+                let a= 1;
+                let b = 2;
+                return this.form.questionAList.split(",").length * this.form.questionAScore +
+                    this.form.questionBList.split(",").length * this.form.questionBScore +
+                    this.form.questionCList.split(",").length * this.form.questionCScore +
+                    this.form.questionDList.split(",").length * this.form.questionDScore +
+                    this.form.questionEList.split(",").length * this.form.questionEScore ;
+            }
+        },
+        methods: {
+            onSubmit() {
+                this.$http.post(this.url, this.form).then((response) => {
+                    if (response.data.status == 0) {
+                        this.$message.success("提交成功");
+                        window.location.href = "/admin/user-table";
+                    } else if (response.data.status > 0) {
+                        this.$message.warning("提交失败！" + response.data.msg);
+                    } else {
+                        this.$message.error("提交失败！请稍后重试或咨询管理员");
+                    }
+                });
+            }
         }
-      }
-    },
-    methods: {
-      onSubmit() {
-        this.$message.success('提交成功！');
-      }
     }
-  }
 </script>

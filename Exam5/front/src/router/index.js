@@ -51,8 +51,24 @@ export default new Router({
                     component: resolve => require(['../components/page/AddStudent.vue'], resolve)
                 },
                 {
-                    path: '/admin/add-question',
-                    component: resolve => require(['../components/page/AddQuestion.vue'], resolve)
+                    path: '/admin/add-a-question',
+                    component: resolve => require(['../components/page/AddQuestionA.vue'], resolve)
+                },
+                {
+                    path: '/admin/add-b-question',
+                    component: resolve => require(['../components/page/AddQuestionB.vue'], resolve)
+                },
+                {
+                    path: '/admin/add-c-question',
+                    component: resolve => require(['../components/page/AddQuestionC.vue'], resolve)
+                },
+                {
+                    path: '/admin/add-d-question',
+                    component: resolve => require(['../components/page/AddQuestionD.vue'], resolve)
+                },
+                {
+                    path: '/admin/add-e-question',
+                    component: resolve => require(['../components/page/AddQuestionE.vue'], resolve)
                 },
                 {
                     path: '/admin/add-paper',

@@ -15,21 +15,10 @@
           <el-input v-model="form.password"></el-input>
         </el-form-item>
         <el-form-item label="学生姓名">
-          <el-input v-model="form.stuName"></el-input>
+          <el-input v-model="form.studyName"></el-input>
         </el-form-item>
-        <el-form-item label="电话">
-          <el-input v-model="form.phone"></el-input>
-        </el-form-item>
-        <el-form-item label="性别">
-          <el-radio-group v-model="form.sex">
-            <el-radio label="男孩"></el-radio>
-            <el-radio label="女孩"></el-radio>
-          </el-radio-group>
-        </el-form-item>
-        <el-form-item label="学生分组">
-          <el-select v-model="form.groupList" placeholder="请选择">
-            <el-option key="bbk" label="步步高" value="bbk"></el-option>
-          </el-select>
+        <el-form-item label="学生学号">
+          <el-input v-model="form.studyId"></el-input>
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="onSubmit">提交</el-button>
@@ -47,10 +36,8 @@
         form: {
           loginName: "",
           password: "",
-          stuName: "",
-          phone: "",
-          sex: "",
-          url: ""
+            studyName: "",
+            studyId: ""
         }
       }
     },

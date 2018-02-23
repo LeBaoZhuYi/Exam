@@ -9,7 +9,7 @@ import "babel-polyfill";
 import 'element-ui/lib/theme-chalk/index.css';    // 默认主题
 
 Vue.use(ElementUI);
-Vue.prototype.$axios = axios;
+Vue.prototype.$http = axios;
 new Vue({
     router,
     render: h => h(App)

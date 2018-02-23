@@ -70,11 +70,31 @@
                             },
                             {
                                 index: 'add-paper',
-                                title: '添加分组'
+                                title: '添加试卷'
                             },
                             {
                                 index: 'add-exam',
                                 title: '添加考试'
+                            },
+                            {
+                                index: 'add-a-question',
+                                title: '添加单选题'
+                            },
+                            {
+                                index: 'add-b-question',
+                                title: '添加多选题'
+                            },
+                            {
+                                index: 'add-c-question',
+                                title: '添加填空题'
+                            },
+                            {
+                                index: 'add-d-question',
+                                title: '添加判断题'
+                            },
+                            {
+                                index: 'add-e-question',
+                                title: '添加简单题'
                             }
                         ]
                     }

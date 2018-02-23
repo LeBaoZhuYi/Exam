@@ -46,6 +46,8 @@
                 </el-table-column>
                 <el-table-column prop="id" label="编号" sortable width="120">
                 </el-table-column>
+                <el-table-column prop="questionTitle" label="题目" sortable width="120">
+                </el-table-column>
                 <el-table-column prop="questionType" label="题目类型" width="120">
                 </el-table-column>
                 <el-table-column prop="questionDegree" label="难易程度" width="120">
