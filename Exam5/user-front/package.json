@@ -9,9 +9,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "0.17.1",
+    "element-ui": "2.0.8",
     "echarts": "3.5.2",
     "vue": "^2.2.2",
-    "vue-router": "^2.2.0"
+    "vue-router": "^2.2.0",
+    "node-sass": "^4.7.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

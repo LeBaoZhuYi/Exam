@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import exam from '@/components/Exam'
+import Exam from '@/components/Exam'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/exam',
       name: 'exam',
-      component: exam
+      component: Exam
     }
   ]
 })
