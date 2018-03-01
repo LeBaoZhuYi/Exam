@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Exam from '@/components/Exam'
+import ExamList from '@/components/ExamList'
 import Login from '@/components/Login'
 
 Vue.use(Router)
@@ -17,6 +18,11 @@ export default new Router({
       path: '/exam',
       name: 'exam',
       component: Exam
+    },
+    {
+      path: '/examList',
+      name: 'examList',
+      component: ExamList
     }
   ]
 })

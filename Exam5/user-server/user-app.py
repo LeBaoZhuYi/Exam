@@ -1,8 +1,10 @@
-#coding=utf8
+# coding=utf8
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf8')
-from model.user import User
+from model.model import *
+from utils import *
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, redirect, url_for, request, flash, render_template
 from flask_login import LoginManager, login_user, login_required, logout_user
@@ -30,8 +32,26 @@ def user_loader(id):  # 这个id参数的值是在 login_user(user)中传入的 
 
 # 添加登录视图，如果是GET方法，返回一个简单的表单
 
-@app.route('/login/', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET'])
 def login():
+    username = request.args.get('username')
+    user = User.query.filter_by(username=username).first()
+    if not user:
+        res = responseData('', 1, '该用户不存在')
+    elif request.args.get('password') != user.password:
+        res = responseData('', 1, '密码错误')
+    else:
+        login_user(user, remember=True)
+        token = Token()
+        token.userId = user.id
+        token.accessToken = encryptUserId(user.id)
+        db.session.add(token)
+        res = responseData(token)
+    return res
+
+
+@app.route('/logout', methods=['GET', 'POST'])
+def logout():
     if request.method == 'GET':
         username = request.args.get('username')
         user = User.query.filter_by(username=username).first()
@@ -46,28 +66,74 @@ def login():
     return 'yeah'
 
 
-@app.route('/')
-@login_required
-def index():
-    return 'Hello Tank'
+@app.route('/examList', methods=['GET'])
+def examList():
+    accessToken = request.args.get('accessToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    examList = Exam.query.all()
+    examJsonList = [exam.to_json() for exam in examList]
+    return responseData(examJsonList)
 
 
-@app.route('/succees')
-@login_required
-def login_success():
-    return 'success'
+@app.route('/historyList', methods=['GET'])
+def historyList():
+    accessToken = request.args.get('accessToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    historyList = History.query.filter_by(userId=user.id).all()
+    historyJsonList = [history.to_json() for history in historyList]
+    return responseData(historyJsonList)
 
 
-@app.route('/logout')
-@login_required
-def logout():
-    logout_user()  # 登出用户
-    return '已经退出登录'
+@app.route('/paperInfo', methods=['GET'])
+def paperInfo():
+    accessToken = request.args.get('accessToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    examList = list(Exam.query.all())
+    examJsonList = [exam.to_json() for exam in examList]
+    return responseData(examJsonList)
 
 
-@app.errorhandler(404)
-def page_not_found(error):
-    return 'error'
+@app.route('/exam', methods=['POST'])
+def exam():
+    accessToken = request.args.get('accessToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    examList = list(Exam.query.all())
+    examJsonList = [exam.to_json() for exam in examList]
+    return responseData(examJsonList)
+
+
+@app.route('/examList', methods=['GET'])
+def examList():
+    accessToken = request.args.get('accessToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    examList = list(Exam.query.all())
+    examJsonList = [exam.to_json() for exam in examList]
+    return responseData(examJsonList)
 
 
 if __name__ == '__main__':
