@@ -3,6 +3,7 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding('utf8')
+import json
 from model.model import *
 from utils import *
 from flask_sqlalchemy import SQLAlchemy
@@ -105,7 +106,32 @@ def paperInfo():
         return responseData('', 2, '用户不存在')
     paperId = request.args.get('paperId')
     paper = Paper.query.filter_by(id=paperId).first()
-    return responseData(paper.to_json())
+    result = paper.to_json()
+    # 单选
+    questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
+    result['questionAlist'] = [{'id': question.id,
+                      'questionTitle': question.title,
+                      'optionMaps': [{'k': option['k'], 'v': option['v']} for option in json.loads(question.options)]} for question in questionA]
+    # 多选
+    questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
+    result['questionBlist'] = [{'id': question.id,
+                      'questionTitle': question.title,
+                      'optionMaps': [{'k': option['k'], 'v': option['v']} for option in json.loads(question.options)]} for question in questionB]
+    # 填空
+    questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
+    result['questionClist'] = [{'id': question.id,
+                      'questionTitle': question.title} for question in questionC]
+    # 判断
+    questionD = Question.query.filter(Question.id.in_(json.loads(paper.questionDlist))).all()
+    result['questionDlist'] = [{'id': question.id,
+                      'questionTitle': question.title} for question in questionD]
+    # 简答
+    questionE = Question.query.filter(Question.id.in_(json.loads(paper.questionElist))).all()
+    result['questionElist'] = [{'id': question.id,
+                      'questionTitle': question.title} for question in questionE]
+
+
+    return responseData(result)
 
 
 @app.route('/exam', methods=['POST'])
