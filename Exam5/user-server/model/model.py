@@ -8,7 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:!23$56@localhost:3306/school?charset=utf8mb4'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:!23$56@localhost:3306/exam5?charset=utf8'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 
 db = SQLAlchemy(app)
@@ -41,7 +41,9 @@ class History(db.Model):
     __tablename__ = 'history'
     id = db.Column(db.Integer, primary_key=True)
     studyId = db.Column(db.Integer, unique=True)
+    studyName = db.Column(db.Integer, unique=True)
     examId = db.Column(db.Integer, unique=True)
+    examTitle = db.Column(db.Integer, unique=True)
     status = db.Column(db.Integer)
     score = db.Column(db.String(10))
     questionAanswer = db.Column(db.String(511))
@@ -61,6 +63,8 @@ class History(db.Model):
             'id': self.id,
             'studyId': self.studyId,
             'examId': self.examId,
+            'studyName': self.studyName,
+            'examTitle': self.examTitle,
             'status': self.status,
             'score': self.score,
             'questionAanswer': self.questionAanswer,
@@ -113,32 +117,42 @@ class Paper(db.Model):
     __tablename__ = 'paper'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(511), unique=True)
-    questionAList = db.Column(db.String(100))
-    questionBList = db.Column(db.String(100))
-    questionCList = db.Column(db.String(100))
-    questionDList = db.Column(db.String(100))
-    questionEList = db.Column(db.String(100))
+    questionAlist = db.Column(db.String(100))
+    questionBlist = db.Column(db.String(100))
+    questionClist = db.Column(db.String(100))
+    questionDlist = db.Column(db.String(100))
+    questionElist = db.Column(db.String(100))
     degree = db.Column(db.String(10))
     options = db.Column(db.String(511))
     questionAanwser = db.Column(db.String(100))
     questionBanwser = db.Column(db.String(100))
     questionCanwser = db.Column(db.String(100))
     questionDanwser = db.Column(db.String(100))
+    questionAscore = db.Column(db.String(10))
+    questionBscore = db.Column(db.String(10))
+    questionCscore = db.Column(db.String(10))
+    questionDscore = db.Column(db.String(10))
+    questionEscore = db.Column(db.String(10))
     cTime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
             'id': self.id,
             'title': self.title,
-            'questionAList': self.questionAList,
-            'questionBList': self.questionBList,
-            'questionCList': self.questionCList,
-            'questionDList': self.questionDList,
-            'questionEList': self.questionEList,
+            'questionAlist': self.questionAlist,
+            'questionBlist': self.questionBlist,
+            'questionClist': self.questionClist,
+            'questionDlist': self.questionDlist,
+            'questionElist': self.questionElist,
             'questionAanwser': self.questionAanwser,
             'questionBanwser': self.questionBanwser,
             'questionCanwser': self.questionCanwser,
             'questionDanwser': self.questionDanwser,
+            'questionAscore': self.questionAscore,
+            'questionBscore': self.questionBscore,
+            'questionCscore': self.questionCscore,
+            'questionDscore': self.questionDscore,
+            'questionEscore': self.questionEscore,
             'degree': self.degree,
             'options': self.options,
             'answer': self.answer,

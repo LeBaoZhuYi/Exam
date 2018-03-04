@@ -34,7 +34,7 @@ Vue.prototype.formatObjectData = function (data) {
     if (data[k] == undefined) {
       data[k] = "";
     }
-    if (k == "ctime" || k == "startTime" || k == "endTime") {
+    else if (k == "ctime" || k == "startTime" || k == "endTime") {
       data[k] = this.timestampToString(data[k]);
     } else {
       data[k] = String(data[k]);

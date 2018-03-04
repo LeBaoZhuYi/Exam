@@ -103,9 +103,9 @@ def paperInfo():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    examList = list(Exam.query.all())
-    examJsonList = [exam.to_json() for exam in examList]
-    return responseData(examJsonList)
+    paperId = request.args.get('paperId')
+    paper = Paper.query.filter_by(id=paperId).first()
+    return responseData(paper.to_json())
 
 
 @app.route('/exam', methods=['POST'])
@@ -120,21 +120,6 @@ def exam():
     examList = list(Exam.query.all())
     examJsonList = [exam.to_json() for exam in examList]
     return responseData(examJsonList)
-
-
-@app.route('/examList', methods=['GET'])
-def examList():
-    accessToken = request.args.get('accessToken')
-    token = Token.query.filter_by(accessToken=accessToken).first()
-    if not token:
-        return responseData('', 1, '尚未登录')
-    user = User.query.filter_by(id=token.userId).first()
-    if not user:
-        return responseData('', 2, '用户不存在')
-    examList = list(Exam.query.all())
-    examJsonList = [exam.to_json() for exam in examList]
-    return responseData(examJsonList)
-
 
 if __name__ == '__main__':
     app.run()

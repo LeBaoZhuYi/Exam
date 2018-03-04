@@ -16,16 +16,16 @@
               <div class="test_content_title">
                 <h2>单选题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionAList.length}}</i><span>题，</span><span>每题</span><i
-                  class="content_fs">{{questionAScore}}</i><span>分</span>
+                  <span>共</span><i class="content_lit">{{questionAlist.length}}</i><span>题，</span><span>每题</span><i
+                  class="content_fs">{{questionAscore}}</i><span>分</span>
                 </p>
               </div>
             </div>
             <div class="test_content_nr">
               <ul>
-                <li v-for="(questionA, index) in questionAList" :id="'qu_0_' + index">
+                <li v-for="(questionA, index) in questionAlist" :id="'qu_0_' + index">
                   <div class="test_content_nr_tt">
-                    <i>{{index + 1}}</i><span>({{questionAScore}}分)</span>{{questionA.questionTitle}}<b
+                    <i>{{index + 1}}</i><span>({{questionAscore}}分)</span>{{questionA.questionTitle}}<b
                     class="icon iconfont">&#xe881;</b>
                   </div>
                   <div class="test_content_nr_main">
@@ -49,16 +49,16 @@
               <div class="test_content_title">
                 <h2>多选题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionBList.length}}</i><span>题，</span><span>每题</span><i
-                  class="content_fs">{{questionBScore}}</i><span>分</span>
+                  <span>共</span><i class="content_lit">{{questionBlist.length}}</i><span>题，</span><span>每题</span><i
+                  class="content_fs">{{questionBscore}}</i><span>分</span>
                 </p>
               </div>
             </div>
             <div class="test_content_nr">
               <ul>
-                <li v-for="(questionB, index) in questionBList" :id="'qu_1_' + index">
+                <li v-for="(questionB, index) in questionBlist" :id="'qu_1_' + index">
                   <div class="test_content_nr_tt">
-                    <i>{{index + 1}}</i><span>({{questionBScore}}分)</span>{{questionB.questionTitle}}<b
+                    <i>{{index + 1}}</i><span>({{questionBscore}}分)</span>{{questionB.questionTitle}}<b
                     class="icon iconfont">&#xe881;</b>
                   </div>
                   <div class="test_content_nr_main">
@@ -82,16 +82,16 @@
               <div class="test_content_title">
                 <h2>填空题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionCList.length}}</i><span>题，</span><span>每题</span><i
-                  class="content_fs">{{questionCScore}}</i><span>分</span>
+                  <span>共</span><i class="content_lit">{{questionClist.length}}</i><span>题，</span><span>每题</span><i
+                  class="content_fs">{{questionCscore}}</i><span>分</span>
                 </p>
               </div>
             </div>
             <div class="test_content_nr">
               <ul>
-                <li v-for="(questionC, index) in questionCList" :id="'qu_2_' + index">
+                <li v-for="(questionC, index) in questionClist" :id="'qu_2_' + index">
                   <div class="test_content_nr_tt">
-                    <i>{{index + 1}}</i><span>({{questionCScore}}分)</span>{{questionC.questionTitle}}<b
+                    <i>{{index + 1}}</i><span>({{questionCscore}}分)</span>{{questionC.questionTitle}}<b
                     class="icon iconfont">&#xe881;</b>
                   </div>
                   <div class="test_content_nr_main">
@@ -112,16 +112,16 @@
               <div class="test_content_title">
                 <h2>判断题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionDList.length}}</i><span>题，</span><span>每题</span><i
-                  class="content_fs">{{questionDScore}}</i><span>分</span>
+                  <span>共</span><i class="content_lit">{{questionDlist.length}}</i><span>题，</span><span>每题</span><i
+                  class="content_fs">{{questionDscore}}</i><span>分</span>
                 </p>
               </div>
             </div>
             <div class="test_content_nr">
               <ul>
-                <li v-for="(questionD, index) in questionDList" :id="'qu_3_' + index">
+                <li v-for="(questionD, index) in questionDlist" :id="'qu_3_' + index">
                   <div class="test_content_nr_tt">
-                    <i>{{index + 1}}</i><span>({{questionDScore}}分)</span>{{questionD.questionTitle}}<b
+                    <i>{{index + 1}}</i><span>({{questionDscore}}分)</span>{{questionD.questionTitle}}<b
                     class="icon iconfont">&#xe881;</b>
                   </div>
                   <div class="test_content_nr_main">
@@ -151,16 +151,16 @@
               <div class="test_content_title">
                 <h2>简答题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionEList.length}}</i><span>题，</span><span>每题</span><i
-                  class="content_fs">{{questionEScore}}</i><span>分</span>
+                  <span>共</span><i class="content_lit">{{questionElist.length}}</i><span>题，</span><span>每题</span><i
+                  class="content_fs">{{questionEscore}}</i><span>分</span>
                 </p>
               </div>
             </div>
             <div class="test_content_nr">
               <ul>
-                <li v-for="(questionE, index) in questionEList" :id="'qu_4_' + index">
+                <li v-for="(questionE, index) in questionElist" :id="'qu_4_' + index">
                   <div class="test_content_nr_tt">
-                    <i>{{index + 1}}</i><span>({{questionEScore}}分)</span>{{questionE.questionTitle}}<b
+                    <i>{{index + 1}}</i><span>({{questionEscore}}分)</span>{{questionE.questionTitle}}<b
                     class="icon iconfont">&#xe881;</b>
                   </div>
                   <div class="test_content_nr_main">
@@ -196,12 +196,12 @@
               <div class="rt_content_tt">
                 <h2>单选题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionAList.length}}</i><span>题</span>
+                  <span>共</span><i class="content_lit">{{questionAlist.length}}</i><span>题</span>
                 </p>
               </div>
               <div class="rt_content_nr answerSheet">
                 <ul>
-                  <li v-for="(questionA, index) in questionAList"><a :href="'#qu_0_' + index">{{index + 1}}</a></li>
+                  <li v-for="(questionA, index) in questionAlist"><a :href="'#qu_0_' + index">{{index + 1}}</a></li>
                 </ul>
               </div>
             </div>
@@ -209,12 +209,12 @@
               <div class="rt_content_tt">
                 <h2>多选题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionBList.length}}</i><span>题</span>
+                  <span>共</span><i class="content_lit">{{questionBlist.length}}</i><span>题</span>
                 </p>
               </div>
               <div class="rt_content_nr answerSheet">
                 <ul>
-                  <li v-for="(questionB, index) in questionBList"><a :href="'#qu_1_' + index">{{index + 1}}</a></li>
+                  <li v-for="(questionB, index) in questionBlist"><a :href="'#qu_1_' + index">{{index + 1}}</a></li>
                 </ul>
               </div>
             </div>
@@ -222,12 +222,12 @@
               <div class="rt_content_tt">
                 <h2>填空题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionCList.length}}</i><span>题</span>
+                  <span>共</span><i class="content_lit">{{questionClist.length}}</i><span>题</span>
                 </p>
               </div>
               <div class="rt_content_nr answerSheet">
                 <ul>
-                  <li v-for="(questionC, index) in questionCList"><a :href="'#qu_2_' + index">{{index + 1}}</a></li>
+                  <li v-for="(questionC, index) in questionClist"><a :href="'#qu_2_' + index">{{index + 1}}</a></li>
                 </ul>
               </div>
             </div>
@@ -235,12 +235,12 @@
               <div class="rt_content_tt">
                 <h2>判断题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionDList.length}}</i><span>题</span>
+                  <span>共</span><i class="content_lit">{{questionDlist.length}}</i><span>题</span>
                 </p>
               </div>
               <div class="rt_content_nr answerSheet">
                 <ul>
-                  <li v-for="(questionD, index) in questionDList"><a :href="'#qu_3_' + index">{{index + 1}}</a></li>
+                  <li v-for="(questionD, index) in questionDlist"><a :href="'#qu_3_' + index">{{index + 1}}</a></li>
                 </ul>
               </div>
             </div>
@@ -248,12 +248,12 @@
               <div class="rt_content_tt">
                 <h2>简答题</h2>
                 <p>
-                  <span>共</span><i class="content_lit">{{questionEList.length}}</i><span>题</span>
+                  <span>共</span><i class="content_lit">{{questionElist.length}}</i><span>题</span>
                 </p>
               </div>
               <div class="rt_content_nr answerSheet">
                 <ul>
-                  <li v-for="(questionE, index) in questionEList"><a :href="'#qu_4_' + index">{{index + 1}}</a></li>
+                  <li v-for="(questionE, index) in questionElist"><a :href="'#qu_4_' + index">{{index + 1}}</a></li>
                 </ul>
               </div>
             </div>
@@ -270,12 +270,12 @@
   export default {
     data() {
       return {
-        questionAScore: 5,
-        questionBScore: 5,
-        questionCScore: 5,
-        questionDScore: 5,
-        questionEScore: 20,
-        questionAList: [{
+        questionAscore: 5,
+        questionBscore: 5,
+        questionCscore: 5,
+        questionDscore: 5,
+        questionEscore: 20,
+        questionAlist: [{
           id: 1,
           questionTitle: "2",
           optionMaps: [
@@ -306,7 +306,7 @@
           ],
           answer: "A",
         }],
-        questionBList: [{
+        questionBlist: [{
           id: 1,
           questionTitle: "2",
           optionMaps: [
@@ -337,7 +337,7 @@
           ],
           answer: "ABCD",
         }],
-        questionCList: [{
+        questionClist: [{
           id: 1,
           questionTitle: "2()",
           answer: "A",
@@ -350,7 +350,7 @@
           questionTitle: "2()",
           answer: "A",
         }],
-        questionDList: [{
+        questionDlist: [{
           id: 1,
           questionTitle: "2",
           answer: 1,
@@ -359,7 +359,7 @@
           questionTitle: "2",
           answer: 0,
         }],
-        questionEList: [{
+        questionElist: [{
           id: 1,
           questionTitle: "2",
           answer: ""
@@ -367,10 +367,32 @@
           id: 2,
           questionTitle: "2",
           answer: ""
-        }]
+        }],
+        examForm: {},
+        paperUrl: '/api/paperInfo',
+        examUrl: '/api/exam'
       }
     },
-
+    mounted: function() {
+      const self = this;
+      let examId = this.$route.query.id;
+      if (examId == null){
+        return;
+      }
+      self.$http.get(self.paperUrl, {params: {examId: examId}}).then((response) => {
+        if(response.data.status == 0){
+          self.questionAscore = response.data.data.questionAscore;
+          self.questionBscore = response.data.data.questionBscore;
+          self.questionCscore = response.data.data.questionCscore;
+          self.questionDscore = response.data.data.questionDscore;
+          self.questionEscore = response.data.data.questionEscore;
+        } else if(response.data.status > 0){
+          self.$message.error("获取考试信息失败！" + response.data.msg);
+        } else{
+          self.$message.error("获取考试信息失败！请稍后重试或咨询管理员");
+        }
+      });
+    },
     methods: {
       addHasBeenAnswer(questionIndex, index) {
         let cardLi = document.querySelector('a[href="#qu_' + questionIndex + '_' + index + '"]'); // 根据题目ID找到对应答题卡
@@ -381,7 +403,8 @@
         if (!cardLi.classList.contains('hasBeenAnswer')) {
           cardLi.classList.add('hasBeenAnswer');
         }
-      }
+      },
+
     }
   }
 </script>
