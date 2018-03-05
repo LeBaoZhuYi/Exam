@@ -4,6 +4,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 from flask import Flask
+from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 import datetime
 
@@ -14,13 +15,14 @@ app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 db = SQLAlchemy(app)
 
 
-class User(db.Model):
+class User(db.Model, UserMixin):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
     studyId = db.Column(db.String(32), unique=True)
     studyName = db.Column(db.String(64), unique=True)
+    password = db.Column(db.String(64), unique=True)
     loginName = db.Column(db.String(32), nullable=False)
-    cTime = db.Column(db.DateTime, default=datetime.datetime.now)
+    ctime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
@@ -28,7 +30,7 @@ class User(db.Model):
             'studyId': self.studyId,
             'loginName': self.loginName,
             'studyName': self.studyName,
-            'cTime': str(self.cTime)
+            'ctime': str(self.ctime)
         }
 
         return json_student
@@ -56,7 +58,7 @@ class History(db.Model):
     questionCscore = db.Column(db.String(10))
     questionDscore = db.Column(db.String(10))
     questionEscore = db.Column(db.String(10))
-    cTime = db.Column(db.DateTime, default=datetime.datetime.now)
+    ctime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
@@ -77,7 +79,7 @@ class History(db.Model):
             'questionCscore': self.questionCscore,
             'questionDscore': self.questionDscore,
             'questionEscore': self.questionEscore,
-            'cTime': str(self.cTime)
+            'ctime': str(self.ctime)
         }
 
         return json_student
@@ -94,7 +96,7 @@ class Question(db.Model):
     degree = db.Column(db.String(10))
     options = db.Column(db.String(511))
     answer = db.Column(db.String(64))
-    cTime = db.Column(db.DateTime, default=datetime.datetime.now)
+    ctime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
@@ -104,7 +106,7 @@ class Question(db.Model):
             'degree': self.degree,
             'options': self.options,
             'answer': self.answer,
-            'cTime': str(self.cTime)
+            'ctime': str(self.ctime)
         }
 
         return json_student
@@ -123,17 +125,12 @@ class Paper(db.Model):
     questionDlist = db.Column(db.String(100))
     questionElist = db.Column(db.String(100))
     degree = db.Column(db.String(10))
-    options = db.Column(db.String(511))
-    questionAanwser = db.Column(db.String(100))
-    questionBanwser = db.Column(db.String(100))
-    questionCanwser = db.Column(db.String(100))
-    questionDanwser = db.Column(db.String(100))
     questionAscore = db.Column(db.String(10))
     questionBscore = db.Column(db.String(10))
     questionCscore = db.Column(db.String(10))
     questionDscore = db.Column(db.String(10))
     questionEscore = db.Column(db.String(10))
-    cTime = db.Column(db.DateTime, default=datetime.datetime.now)
+    ctime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
@@ -156,7 +153,7 @@ class Paper(db.Model):
             'degree': self.degree,
             'options': self.options,
             'answer': self.answer,
-            'cTime': str(self.cTime)
+            'ctime': str(self.ctime)
         }
 
         return json_student
@@ -170,18 +167,20 @@ class Exam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(511), unique=True)
     paperId = db.Column(db.Integer, unique=True)
+    degree = db.Column(db.String(10))
     startTime = db.Column(db.DateTime)
     endTime = db.Column(db.DateTime)
-    cTime = db.Column(db.DateTime, default=datetime.datetime.now)
+    ctime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
             'id': self.id,
             'title': self.title,
             'paperId': self.paperId,
+            'degree': self.degree,
             'startTime': str(self.startTime),
             'endTime': str(self.endTime),
-            'cTime': str(self.cTime)
+            'ctime': str(self.ctime)
         }
 
         return json_student
@@ -195,14 +194,14 @@ class Token(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     userId = db.Column(db.Integer, unique=True)
     accessToken = db.Column(db.String(32), unique=True)
-    cTime = db.Column(db.DateTime, default=datetime.datetime.now)
+    ctime = db.Column(db.DateTime, default=datetime.datetime.now)
 
     def to_json(self):
         json_student = {
             'id': self.id,
             'userId': self.userId,
             'accessToken': self.accessToken,
-            'cTime': str(self.cTime)
+            'ctime': str(self.ctime)
         }
 
         return json_student

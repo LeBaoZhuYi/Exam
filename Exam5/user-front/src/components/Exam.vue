@@ -375,7 +375,7 @@
     },
     mounted: function() {
       const self = this;
-      let examId = this.$route.query.id;
+      let examId = this.$route.query.examId;
       if (examId == null){
         return;
       }

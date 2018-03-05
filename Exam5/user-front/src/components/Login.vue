@@ -3,11 +3,11 @@
     <el-form autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left" label-width="0px"
              class="card-box login-form">
       <h3 class="title">vue-element-admin</h3>
-      <el-form-item prop="username">
+      <el-form-item prop="loginName">
         <span class="svg-container svg-container_login">
           <i class="el-icon-edit-outline"></i>
         </span>
-        <el-input name="username" type="text" v-model="loginForm.username" autoComplete="on" placeholder="username" />
+        <el-input name="loginName" type="text" v-model="loginForm.loginName" autoComplete="on" placeholder="loginName" />
       </el-form-item>
       <el-form-item prop="password">
         <span class="svg-container">
@@ -15,7 +15,7 @@
         </span>
         <el-input name="password" :type="pwdType" @keyup.enter.native="handleLogin" v-model="loginForm.password" autoComplete="on"
                   placeholder="password"></el-input>
-        <span class="show-pwd" @click="showPwd"><svg-icon icon-class="eye" /></span>
+        <span class="show-pwd" @click="showPwd"><i class="el-icon-delete"></i></span>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin">
@@ -23,7 +23,7 @@
         </el-button>
       </el-form-item>
       <div class="tips">
-        <span style="margin-right:20px;">username: admin</span>
+        <span style="margin-right:20px;">loginName: admin</span>
         <span> password: admin</span>
       </div>
     </el-form>
@@ -36,30 +36,33 @@
     name: 'login',
     data() {
       const validateUsername = (rule, value, callback) => {
-        if (!isvalidUsername(value)) {
-          callback(new Error('请输入正确的用户名'))
-        } else {
+//        if (!isvalidUsername(value)) {
+//          callback(new Error('请输入正确的用户名'))
+//        } else {
+//          callback()
+//        }
           callback()
-        }
-      }
+      };
       const validatePass = (rule, value, callback) => {
-        if (value.length < 5) {
-          callback(new Error('密码不能小于5位'))
-        } else {
-          callback()
-        }
-      }
+//        if (value.length < 5) {
+//          callback(new Error('密码不能小于5位'))
+//        } else {
+//          callback()
+//        }
+        callback()
+      };
       return {
         loginForm: {
-          username: 'admin',
-          password: 'admin'
+          loginName: '',
+          password: ''
         },
         loginRules: {
-          username: [{ required: true, trigger: 'blur', validator: validateUsername }],
+          loginName: [{ required: true, trigger: 'blur', validator: validateUsername }],
           password: [{ required: true, trigger: 'blur', validator: validatePass }]
         },
         loading: false,
-        pwdType: 'password'
+        pwdType: 'password',
+        loginUrl: '/api/login'
       }
     },
     methods: {
@@ -73,11 +76,21 @@
       handleLogin() {
         this.$refs.loginForm.validate(valid => {
           if (valid) {
-            this.loading = true
-            this.$store.dispatch('Login', this.loginForm).then(() => {
-              this.loading = false
-              this.$router.push({ path: '/' })
+            this.loading = true;
+            this.$http.get(this.loginUrl, {params: this.loginForm}).then((response) => {
+              if (response.data.status == 0) {
+                let examToken = response.data.data;
+                this.setCookie('examToken', examToken, 1);
+                window.location.href = '/examList';
+              } else if (response.data.status > 0) {
+                this.$message.error('登录失败！' + response.data.msg);
+                this.loading = false
+              } else {
+                this.$message.error('登录失败！请稍后再试或联系管理员');
+                this.loading = false
+              }
             }).catch(() => {
+              this.$message.error('登录失败！服务器错误');
               this.loading = false
             })
           } else {

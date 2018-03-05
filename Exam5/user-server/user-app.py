@@ -12,7 +12,7 @@ from flask_login import LoginManager, login_user, login_required, logout_user
 
 app = Flask(__name__)
 app.secret_key = 'Sqsdsffqrhgh.,/1#$%^&'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:!23$56@localhost:3306/school?charset=utf8mb4'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:!23$56@localhost:3306/exam5?charset=utf8mb4'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.debug = True
 
@@ -35,19 +35,25 @@ def user_loader(id):  # 这个id参数的值是在 login_user(user)中传入的 
 
 @app.route('/login', methods=['GET'])
 def login():
-    username = request.args.get('username')
-    user = User.query.filter_by(username=username).first()
+    loginName = request.args.get('loginName')
+    user = User.query.filter_by(loginName=loginName).first()
     if not user:
         res = responseData('', 1, '该用户不存在')
     elif request.args.get('password') != user.password:
         res = responseData('', 1, '密码错误')
     else:
         login_user(user, remember=True)
-        token = Token()
-        token.userId = user.id
-        token.accessToken = encryptUserId(user.id)
-        db.session.add(token)
-        res = responseData(token)
+        oldToken = Token.query.filter_by(userId=user.id).first()
+        if oldToken:
+            oldToken.accessToken = encryptUserId(user.id)
+            db.session.merge(oldToken)
+            token = oldToken
+        else:
+            token = Token()
+            token.userId = user.id
+            token.accessToken = encryptUserId(user.id)
+            db.session.add(token)
+        res = responseData(token.accessToken)
     return res
 
 
@@ -69,7 +75,7 @@ def logout():
 
 @app.route('/examList', methods=['GET'])
 def examList():
-    accessToken = request.args.get('accessToken')
+    accessToken = request.cookies.get('examToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
@@ -83,7 +89,7 @@ def examList():
 
 @app.route('/historyList', methods=['GET'])
 def historyList():
-    accessToken = request.args.get('accessToken')
+    accessToken = request.cookies.get('examToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
@@ -97,15 +103,25 @@ def historyList():
 
 @app.route('/paperInfo', methods=['GET'])
 def paperInfo():
-    accessToken = request.args.get('accessToken')
+    accessToken = request.cookies.get('examToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    paperId = request.args.get('paperId')
-    paper = Paper.query.filter_by(id=paperId).first()
+    examId = request.args.get('examId')
+    exam = Exam.query.filter_by(id=examId).first()
+    if not exam:
+        return responseData('', 3, '未找到考试')
+    if time.time() < exam.startTime:
+        return responseData('', 4, '考试未开始')
+    if time.time() > exam.endTime:
+        return responseData('', 4, '考试已结束')
+    paper = Paper.query.filter_by(id=exam.paperId).first()
+    if not paper:
+        return responseData('', 5, '未找到试卷')
+
     result = paper.to_json()
     # 单选
     questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
@@ -136,7 +152,7 @@ def paperInfo():
 
 @app.route('/exam', methods=['POST'])
 def exam():
-    accessToken = request.args.get('accessToken')
+    accessToken = request.cookies.get('examToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')

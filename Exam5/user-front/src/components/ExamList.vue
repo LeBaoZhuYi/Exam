@@ -118,7 +118,7 @@
       }
     },
     created() {
-      // this.getData();
+      this.getData();
       this.tableData = this.allData;
       this.handleCurrentChange(1);
     },
@@ -145,7 +145,8 @@
     methods: {
       getData() {
         const self = this;
-        this.$http.get(this.url).then((response) => {
+        let token = this.getCookie('examToken');
+        this.$http.get(this.url, {params: {token:token}}).then((response) => {
           if (response.data.status == 0) {
             self.allData = response.data.data;
           } else if (response.data.status > 0) {
@@ -178,8 +179,8 @@
         } else if(now > endTime){
           this.$alert("考试已经结束", "警告");
         } else{
-          let paperId = row.paperId;
-          this.$route.push({path:'/exam',query:{paperId:paperId}});
+          let examId = row.id;
+          this.$router.push({path:'/exam',query:{examId:examId}});
         }
       }
     }
