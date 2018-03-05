@@ -141,18 +141,12 @@ class Paper(db.Model):
             'questionClist': self.questionClist,
             'questionDlist': self.questionDlist,
             'questionElist': self.questionElist,
-            'questionAanwser': self.questionAanwser,
-            'questionBanwser': self.questionBanwser,
-            'questionCanwser': self.questionCanwser,
-            'questionDanwser': self.questionDanwser,
             'questionAscore': self.questionAscore,
             'questionBscore': self.questionBscore,
             'questionCscore': self.questionCscore,
             'questionDscore': self.questionDscore,
             'questionEscore': self.questionEscore,
             'degree': self.degree,
-            'options': self.options,
-            'answer': self.answer,
             'ctime': str(self.ctime)
         }
 

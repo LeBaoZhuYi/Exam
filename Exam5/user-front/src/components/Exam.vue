@@ -386,6 +386,11 @@
           self.questionCscore = response.data.data.questionCscore;
           self.questionDscore = response.data.data.questionDscore;
           self.questionEscore = response.data.data.questionEscore;
+          self.questionAlist = response.data.data.questionAlist;
+          self.questionBlist = response.data.data.questionBlist;
+          self.questionClist = response.data.data.questionClist;
+          self.questionDlist = response.data.data.questionDlist;
+          self.questionElist = response.data.data.questionElist;
         } else if(response.data.status > 0){
           self.$message.error("获取考试信息失败！" + response.data.msg);
         } else{

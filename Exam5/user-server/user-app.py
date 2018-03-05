@@ -114,9 +114,9 @@ def paperInfo():
     exam = Exam.query.filter_by(id=examId).first()
     if not exam:
         return responseData('', 3, '未找到考试')
-    if time.time() < exam.startTime:
+    if datetime.datetime.now() < exam.startTime:
         return responseData('', 4, '考试未开始')
-    if time.time() > exam.endTime:
+    if datetime.datetime.now() > exam.endTime:
         return responseData('', 4, '考试已结束')
     paper = Paper.query.filter_by(id=exam.paperId).first()
     if not paper:
@@ -124,15 +124,16 @@ def paperInfo():
 
     result = paper.to_json()
     # 单选
+
     questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
     result['questionAlist'] = [{'id': question.id,
                       'questionTitle': question.title,
-                      'optionMaps': [{'k': option['k'], 'v': option['v']} for option in json.loads(question.options)]} for question in questionA]
+                      'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in json.loads(question.options)]} for question in questionA]
     # 多选
     questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
     result['questionBlist'] = [{'id': question.id,
                       'questionTitle': question.title,
-                      'optionMaps': [{'k': option['k'], 'v': option['v']} for option in json.loads(question.options)]} for question in questionB]
+                      'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in json.loads(question.options)]} for question in questionB]
     # 填空
     questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
     result['questionClist'] = [{'id': question.id,
