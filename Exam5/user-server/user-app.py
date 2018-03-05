@@ -12,7 +12,7 @@ from flask_login import LoginManager, login_user, login_required, logout_user
 
 app = Flask(__name__)
 app.secret_key = 'Sqsdsffqrhgh.,/1#$%^&'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:!23$56@localhost:3306/exam5?charset=utf8mb4'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:!23$56@localhost:3306/exam5?charset=utf8'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.debug = True
 
@@ -154,14 +154,42 @@ def paperInfo():
 @app.route('/exam', methods=['POST'])
 def exam():
     accessToken = request.cookies.get('examToken')
+
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    examList = list(Exam.query.all())
-    examJsonList = [exam.to_json() for exam in examList]
+    data = json.loads(request.data)
+    examId = data['examId']
+    exam = Exam.query.filter_by(id=token.userId).first()
+    if not exam:
+        return responseData('', 2, '考试不存在')
+    paper = Paper.query.filter_by(id=exam.paperId).first()
+    if not paper:
+        return responseData('', 2, '考试不存在')
+    questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
+    questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
+    questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
+    questionD = Question.query.filter(Question.id.in_(json.loads(paper.questionDlist))).all()
+    questionE = Question.query.filter(Question.id.in_(json.loads(paper.questionElist))).all()
+    history = History()
+    history.examId = examId
+    history.studyId = user.studyId
+    history.questionAanswer = json.dumps(data['questionAanswer'])
+    history.questionBanswer = json.dumps(data['questionBanswer'])
+    history.questionCanswer = json.dumps(data['questionCanswer'])
+    history.questionDanswer = json.dumps(data['questionDanswer'])
+    history.questionEanswer = json.dumps(data['questionEanswer'])
+    questionAscore,questionBscore,questionCscore,questionDscore =  0, 0, 0, 0
+    for i, question in enumerate(questionA):
+        if (question == history.questionAanswer[i]):
+            questionAscore += paper.questionAscore
+    for i, question in enumerate(questionB):
+        if (question == history.questionBanswer[i]):
+            questionBscore += paper.questionBscore
+
     return responseData(examJsonList)
 
 if __name__ == '__main__':

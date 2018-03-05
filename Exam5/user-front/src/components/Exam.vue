@@ -383,14 +383,14 @@
         examUrl: '/api/exam'
       }
     },
-    mounted: function() {
+    mounted: function () {
       const self = this;
       let examId = this.$route.query.examId;
-      if (examId == null){
+      if (examId == null) {
         return;
       }
       self.$http.get(self.paperUrl, {params: {examId: examId}}).then((response) => {
-        if(response.data.status == 0){
+        if (response.data.status == 0) {
           self.questionAscore = response.data.data.questionAscore;
           self.questionBscore = response.data.data.questionBscore;
           self.questionCscore = response.data.data.questionCscore;
@@ -401,33 +401,33 @@
           self.questionClist = response.data.data.questionClist;
           self.questionDlist = response.data.data.questionDlist;
           self.questionElist = response.data.data.questionElist;
-          for(let i in self.questionAlist){
+          for (let i in self.questionAlist) {
             self.examForm.questionAanswer[i] = "";
           }
-          for(let i in self.questionBlist){
+          for (let i in self.questionBlist) {
             self.examForm.questionBanswer[i] = "";
           }
-          for(let i in self.questionClist){
+          for (let i in self.questionClist) {
             self.examForm.questionCanswer[i] = "";
           }
-          for(let i in self.questionDlist){
+          for (let i in self.questionDlist) {
             self.examForm.questionDanswer[i] = "";
           }
-          for(let i in self.questionElist){
+          for (let i in self.questionElist) {
             self.examForm.questionEanswer[i] = "";
           }
-        } else if(response.data.status > 0){
+        } else if (response.data.status > 0) {
           self.$message.error("获取考试信息失败！" + response.data.msg);
-        } else{
+        } else {
           self.$message.error("获取考试信息失败！请稍后重试或咨询管理员");
         }
       });
     },
     methods: {
       setAnswer(questionIndex, index, value, type) {
-        if (type == 'A'){
+        if (type == 'A') {
           this.examForm.questionAanswer[index] = value;
-        }else if (type == 'D'){
+        } else if (type == 'D') {
           this.examForm.questionDanswer[index] = value;
         }
         let cardLi = document.querySelector('a[href="#qu_' + questionIndex + '_' + index + '"]'); // 根据题目ID找到对应答题卡
@@ -439,20 +439,35 @@
           cardLi.classList.add('hasBeenAnswer');
         }
       },
-      postAnswer(){
-        for(let i in this.questionBlist){
-          let obj = document.getElementsByName('1_answer_' + i);
-          for(let k in obj){
-            if(obj[k].checked) this.examForm.questionBanswer[i] += k + ',';
+      postAnswer() {
+        this.$confirm('是否确认交卷?请检查是否有未完成试题', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          for (let i in this.questionBlist) {
+            let obj = document.getElementsByName('1_answer_' + i);
+            for (let k in obj) {
+              if (obj[k].checked) this.examForm.questionBanswer[i] += k + ',';
+            }
           }
-        }
-        for(let i in this.questionClist){
-          this.examForm.questionCanswer[i] = document.getElementById('2_answer_' + i).value;
-        }
-        for(let i in this.questionElist){
-          this.examForm.questionEanswer[i] = document.getElementById('4_answer_' + i).value;
-        }
-        return;
+          for (let i in this.questionClist) {
+            this.examForm.questionCanswer[i] = document.getElementById('2_answer_' + i).value;
+          }
+          for (let i in this.questionElist) {
+            this.examForm.questionEanswer[i] = document.getElementById('4_answer_' + i).value;
+          }
+          this.$http.post(this.examUrl, {params: this.examForm}).then((response) => {
+            if (response.data.status == 0) {
+              this.$alert("交卷成功！", "提示");
+            } else if (response.data.status > 0) {
+              self.$message.error("交卷失败！" + response.data.msg);
+            } else {
+              self.$message.error("交卷失败！请稍后重试或咨询管理员");
+            }
+          })
+        }).catch(() => {
+        });
       }
     }
   }
