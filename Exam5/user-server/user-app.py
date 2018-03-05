@@ -190,7 +190,7 @@ def exam():
         if (question == history.questionBanswer[i]):
             questionBscore += paper.questionBscore
 
-    return responseData(examJsonList)
+    return responseData()
 
 if __name__ == '__main__':
     app.run()
