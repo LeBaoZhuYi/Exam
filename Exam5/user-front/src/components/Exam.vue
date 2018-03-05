@@ -9,7 +9,8 @@
               <p class="test_time">
                 <i class="icon iconfont">&#xe6fb;</i><b class="alt-1">01:40</b>
               </p>
-              <font><input type="button" name="test_jiaojuan" value="交卷"></font>
+              <!--<input type="button" name="test_jiaojuan" value="交卷">-->
+              <el-button type="success" @click="postAnswer()">交卷</el-button>
             </div>
 
             <div class="test_content">
@@ -35,7 +36,7 @@
                                :id="'0_answer_' + index + '_option_' + optionIndex"
                         />
                         <label :for="'0_answer_' + index + '_option_' + optionIndex"
-                               @click="addHasBeenAnswer(0, index)">
+                               @click="setAnswer(0, index, option.k, 'A')">
                           {{option.k}}.
                           <p class="ue" style="display: inline;">{{option.v}}</p>
                         </label>
@@ -68,7 +69,7 @@
                                :id="'1_answer_' + index + '_option_' + optionIndex"
                         />
                         <label :for="'1_answer_' + index + '_option_' + optionIndex"
-                               @click="addHasBeenAnswer(1, index)">
+                               @click="setAnswer(1, index, '', 'B')">
                           {{option.k}}.
                           <p class="ue" style="display: inline;">{{option.v}}</p>
                         </label>
@@ -96,7 +97,7 @@
                   </div>
                   <div class="test_content_nr_main">
                     <input type="text" :id="'2_answer_' + index" size="100%" :name="'2_answer_' + index"
-                           v-on:input="addHasBeenAnswer(2, index)"
+                           v-on:input="setAnswer(2, index, '', 'C')"
                            style=
                              "border-color: #878787;
                       border-style: solid;
@@ -130,7 +131,7 @@
                         <input type="radio" class="radioOrCheck" value="1" :name="'3_answer_' + index"
                                :id="'3_answer_' + index + '_y'"
                         />
-                        <label :for="'3_answer_' + index + '_y'" @click="addHasBeenAnswer(3, index)">
+                        <label :for="'3_answer_' + index + '_y'" @click="setAnswer(3, index, '是', 'D')">
                           <p class="ue" style="display: inline;">是</p>
                         </label>
                       </li>
@@ -138,7 +139,7 @@
                         <input type="radio" class="radioOrCheck" value="0" :name="'3_answer_' + index"
                                :id="'3_answer_' + index + '_n'"
                         />
-                        <label :for="'3_answer_' + index + '_n'" @click="addHasBeenAnswer(3, index)">
+                        <label :for="'3_answer_' + index + '_n'" @click="setAnswer(3, index, '否', 'D')">
                           <p class="ue" style="display: inline;">否</p>
                         </label>
                       </li>
@@ -165,7 +166,7 @@
                   </div>
                   <div class="test_content_nr_main">
                     <input type="text" :id="'4_answer_' + index" size="100%" :name="'4_answer_' + index"
-                           v-on:input="addHasBeenAnswer(4, index)"
+                           v-on:input="setAnswer(4, index, '', 'E')"
                            style=
                              "border-color: #878787;
                       border-style: solid;
@@ -267,7 +268,10 @@
 </template>
 
 <script>
+  import ElButton from "../../../admin-front/node_modules/element-ui/packages/button/src/button.vue";
+
   export default {
+    components: {ElButton},
     data() {
       return {
         questionAscore: 5,
@@ -368,7 +372,13 @@
           questionTitle: "2",
           answer: ""
         }],
-        examForm: {},
+        examForm: {
+          questionAanswer: [],
+          questionBanswer: [],
+          questionCanswer: [],
+          questionDanswer: [],
+          questionEanswer: []
+        },
         paperUrl: '/api/paperInfo',
         examUrl: '/api/exam'
       }
@@ -391,6 +401,21 @@
           self.questionClist = response.data.data.questionClist;
           self.questionDlist = response.data.data.questionDlist;
           self.questionElist = response.data.data.questionElist;
+          for(let i in self.questionAlist){
+            self.examForm.questionAanswer[i] = "";
+          }
+          for(let i in self.questionBlist){
+            self.examForm.questionBanswer[i] = "";
+          }
+          for(let i in self.questionClist){
+            self.examForm.questionCanswer[i] = "";
+          }
+          for(let i in self.questionDlist){
+            self.examForm.questionDanswer[i] = "";
+          }
+          for(let i in self.questionElist){
+            self.examForm.questionEanswer[i] = "";
+          }
         } else if(response.data.status > 0){
           self.$message.error("获取考试信息失败！" + response.data.msg);
         } else{
@@ -399,7 +424,12 @@
       });
     },
     methods: {
-      addHasBeenAnswer(questionIndex, index) {
+      setAnswer(questionIndex, index, value, type) {
+        if (type == 'A'){
+          this.examForm.questionAanswer[index] = value;
+        }else if (type == 'D'){
+          this.examForm.questionDanswer[index] = value;
+        }
         let cardLi = document.querySelector('a[href="#qu_' + questionIndex + '_' + index + '"]'); // 根据题目ID找到对应答题卡
         // 设置已答题
         if (cardLi == null) {
@@ -409,7 +439,21 @@
           cardLi.classList.add('hasBeenAnswer');
         }
       },
-
+      postAnswer(){
+        for(let i in this.questionBlist){
+          let obj = document.getElementsByName('1_answer_' + i);
+          for(let k in obj){
+            if(obj[k].checked) this.examForm.questionBanswer[i] += k + ',';
+          }
+        }
+        for(let i in this.questionClist){
+          this.examForm.questionCanswer[i] = document.getElementById('2_answer_' + i).value;
+        }
+        for(let i in this.questionElist){
+          this.examForm.questionEanswer[i] = document.getElementById('4_answer_' + i).value;
+        }
+        return;
+      }
     }
   }
 </script>
