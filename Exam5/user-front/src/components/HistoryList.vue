@@ -114,130 +114,11 @@
         dialogFormVisible: false,
         selectTable: {},
         tableData: [],
-        allData: [{
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '111111111111111111111111111111111111111111111111111111111111111111111111111111',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '1111111111111111111111',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }, {
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '11',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '11',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }, {
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '11',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '11',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }, {
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '11',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '11',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }, {
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '11',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '11',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }, {
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '11',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '11',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }, {
-          id: '1',
-          examTitle: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          status: (new Date()).toDateString(),
-          score: (new Date()).toDateString(),
-          questionAanswer: '11',
-          questionBanswer: '11',
-          questionCanswer: '11',
-          questionDanswer: '11',
-          questionEanswer: '11',
-          questionAscore: '11',
-          questionBscore: '11',
-          questionCscore: '11',
-          questionDscore: '11',
-          questionEscore: '11'
-        }]
+        allData: []
       }
     },
     created() {
-      // this.getData();
+      this.getData();
       this.tableData = this.allData;
       this.handleCurrentChange(1);
     },
@@ -265,13 +146,17 @@
       getData() {
         const self = this;
         this.$http.get(this.url).then((response) => {
-          if (response.data.status == 0) {
-            self.allData = response.data.data;
-          } else if (response.data.status > 0) {
-            self.$message.error('获取分组列表失败！' + response.data.msg);
-          } else {
-            self.$message.error('获取分组列表失败！请稍后再试或联系管理员');
-          }
+          const self = this;
+          let token = this.getCookie('examToken');
+          this.$http.get(this.url, {params: {token:token}}).then((response) => {
+            if (response.data.status == 0) {
+              self.allData = response.data.data;
+            } else if (response.data.status > 0) {
+              self.$message.error('获取分组列表失败！' + response.data.msg);
+            } else {
+              self.$message.error('获取分组列表失败！请稍后再试或联系管理员');
+            }
+          })
         })
       },
       detail(index, row) {

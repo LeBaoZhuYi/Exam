@@ -279,100 +279,13 @@
         questionCscore: 5,
         questionDscore: 5,
         questionEscore: 20,
-        questionAlist: [{
-          id: 1,
-          questionTitle: "2",
-          optionMaps: [
-            {k: "A", v: "1"},
-            {k: "B", v: "2"},
-            {k: "C", v: "3"},
-            {k: "D", v: "4"}
-          ],
-          answer: "A",
-        }, {
-          id: 2,
-          questionTitle: "2",
-          optionMaps: [
-            {k: "A", v: "1"},
-            {k: "B", v: "2"},
-            {k: "C", v: "3"},
-            {k: "D", v: "4"}
-          ],
-          answer: "A",
-        }, {
-          id: 3,
-          questionTitle: "2",
-          optionMaps: [
-            {k: "A", v: "1"},
-            {k: "B", v: "2"},
-            {k: "C", v: "3"},
-            {k: "D", v: "4"}
-          ],
-          answer: "A",
-        }],
-        questionBlist: [{
-          id: 1,
-          questionTitle: "2",
-          optionMaps: [
-            {k: "A", v: "1"},
-            {k: "B", v: "2"},
-            {k: "C", v: "3"},
-            {k: "D", v: "4"}
-          ],
-          answer: "AB",
-        }, {
-          id: 2,
-          questionTitle: "2",
-          optionMaps: [
-            {k: "A", v: "1"},
-            {k: "B", v: "2"},
-            {k: "C", v: "3"},
-            {k: "D", v: "4"}
-          ],
-          answer: "ABC",
-        }, {
-          id: 3,
-          questionTitle: "2",
-          optionMaps: [
-            {k: "A", v: "1"},
-            {k: "B", v: "2"},
-            {k: "C", v: "3"},
-            {k: "D", v: "4"}
-          ],
-          answer: "ABCD",
-        }],
-        questionClist: [{
-          id: 1,
-          questionTitle: "2()",
-          answer: "A",
-        }, {
-          id: 2,
-          questionTitle: "2()",
-          answer: "A",
-        }, {
-          id: 3,
-          questionTitle: "2()",
-          answer: "A",
-        }],
-        questionDlist: [{
-          id: 1,
-          questionTitle: "2",
-          answer: 1,
-        }, {
-          id: 2,
-          questionTitle: "2",
-          answer: 0,
-        }],
-        questionElist: [{
-          id: 1,
-          questionTitle: "2",
-          answer: ""
-        }, {
-          id: 2,
-          questionTitle: "2",
-          answer: ""
-        }],
+        questionAlist: [],
+        questionBlist: [],
+        questionClist: [],
+        questionDlist: [],
+        questionElist: [],
         examForm: {
+          examId: -1,
           questionAanswer: [],
           questionBanswer: [],
           questionCanswer: [],
@@ -386,6 +299,7 @@
     mounted: function () {
       const self = this;
       let examId = this.$route.query.examId;
+      this.examForm.examId = examId;
       if (examId == null) {
         return;
       }
@@ -402,10 +316,10 @@
           self.questionDlist = response.data.data.questionDlist;
           self.questionElist = response.data.data.questionElist;
           for (let i in self.questionAlist) {
-            self.examForm.questionAanswer[i] = "";
+            self.examForm.questionAanswer[i] = 0;
           }
           for (let i in self.questionBlist) {
-            self.examForm.questionBanswer[i] = "";
+            self.examForm.questionBanswer[i] = 0;
           }
           for (let i in self.questionClist) {
             self.examForm.questionCanswer[i] = "";
@@ -440,26 +354,35 @@
         }
       },
       postAnswer() {
-        this.$confirm('是否确认交卷?请检查是否有未完成试题', '提示', {
+        const self = this;
+        self.$confirm('是否确认交卷?请检查是否有未完成试题', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {
-          for (let i in this.questionBlist) {
+          for (let i in self.questionBlist) {
+            self.examForm.questionBanswer[i] = 0;
+          }
+          for (let i in self.questionBlist) {
             let obj = document.getElementsByName('1_answer_' + i);
             for (let k in obj) {
-              if (obj[k].checked) this.examForm.questionBanswer[i] += k + ',';
+              if (obj[k].checked){
+                self.examForm.questionBanswer[i] += Math.pow(2, k);
+                console.log(k + ',' + i + ',' + self.examForm.questionBanswer[i]);
+              }
             }
           }
-          for (let i in this.questionClist) {
-            this.examForm.questionCanswer[i] = document.getElementById('2_answer_' + i).value;
+          for (let i in self.questionClist) {
+            self.examForm.questionCanswer[i] = document.getElementById('2_answer_' + i).value;
           }
-          for (let i in this.questionElist) {
-            this.examForm.questionEanswer[i] = document.getElementById('4_answer_' + i).value;
+          for (let i in self.questionElist) {
+            self.examForm.questionEanswer[i] = document.getElementById('4_answer_' + i).value;
           }
-          this.$http.post(this.examUrl, {params: this.examForm}).then((response) => {
+          console.log(self.examForm);
+          self.$http.post(self.examUrl, self.examForm).then((response) => {
             if (response.data.status == 0) {
-              this.$alert("交卷成功！", "提示");
+              self.$alert("交卷成功！", "提示");
+              window.href.location = '/historyList';
             } else if (response.data.status > 0) {
               self.$message.error("交卷失败！" + response.data.msg);
             } else {

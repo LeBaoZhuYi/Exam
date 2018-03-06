@@ -96,7 +96,11 @@ def historyList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    historyList = History.query.filter_by(userId=user.id).all()
+    historyList = History.query.filter_by(studyId=user.studyId).all()
+    # results = []
+    # for history in historyList:
+    #     result = history.to_json
+
     historyJsonList = [history.to_json() for history in historyList]
     return responseData(historyJsonList)
 
@@ -127,26 +131,27 @@ def paperInfo():
 
     questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
     result['questionAlist'] = [{'id': question.id,
-                      'questionTitle': question.title,
-                      'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in json.loads(question.options)]} for question in questionA]
+                                'questionTitle': question.title,
+                                'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in
+                                               json.loads(question.options)]} for question in questionA]
     # 多选
     questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
     result['questionBlist'] = [{'id': question.id,
-                      'questionTitle': question.title,
-                      'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in json.loads(question.options)]} for question in questionB]
+                                'questionTitle': question.title,
+                                'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in
+                                               json.loads(question.options)]} for question in questionB]
     # 填空
     questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
     result['questionClist'] = [{'id': question.id,
-                      'questionTitle': question.title} for question in questionC]
+                                'questionTitle': question.title} for question in questionC]
     # 判断
     questionD = Question.query.filter(Question.id.in_(json.loads(paper.questionDlist))).all()
     result['questionDlist'] = [{'id': question.id,
-                      'questionTitle': question.title} for question in questionD]
+                                'questionTitle': question.title} for question in questionD]
     # 简答
     questionE = Question.query.filter(Question.id.in_(json.loads(paper.questionElist))).all()
     result['questionElist'] = [{'id': question.id,
-                      'questionTitle': question.title} for question in questionE]
-
+                                'questionTitle': question.title} for question in questionE]
 
     return responseData(result)
 
@@ -162,8 +167,8 @@ def exam():
     if not user:
         return responseData('', 2, '用户不存在')
     data = json.loads(request.data)
-    examId = data['examId']
-    exam = Exam.query.filter_by(id=token.userId).first()
+    examId = int(data['examId'])
+    exam = Exam.query.filter_by(id=examId).first()
     if not exam:
         return responseData('', 2, '考试不存在')
     paper = Paper.query.filter_by(id=exam.paperId).first()
@@ -173,24 +178,33 @@ def exam():
     questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
     questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
     questionD = Question.query.filter(Question.id.in_(json.loads(paper.questionDlist))).all()
-    questionE = Question.query.filter(Question.id.in_(json.loads(paper.questionElist))).all()
     history = History()
     history.examId = examId
+    history.examTitle = exam.title
     history.studyId = user.studyId
+    history.studyName = user.studyName
     history.questionAanswer = json.dumps(data['questionAanswer'])
-    history.questionBanswer = json.dumps(data['questionBanswer'])
-    history.questionCanswer = json.dumps(data['questionCanswer'])
-    history.questionDanswer = json.dumps(data['questionDanswer'])
-    history.questionEanswer = json.dumps(data['questionEanswer'])
-    questionAscore,questionBscore,questionCscore,questionDscore =  0, 0, 0, 0
+    history.questionBanswer = json.dumps(duoxuanTransfer(data['questionBanswer']))
+    history.questionCanswer = json.dumps(data['questionCanswer'],ensure_ascii=False)
+    history.questionDanswer = json.dumps(data['questionDanswer'],ensure_ascii=False)
+    history.questionEanswer = json.dumps(data['questionEanswer'],ensure_ascii=False)
+    history.questionAscore, history.questionBscore, history.questionCscore, history.questionDscore, history.questionEscore = 0, 0, 0, 0, 0
     for i, question in enumerate(questionA):
-        if (question == history.questionAanswer[i]):
-            questionAscore += paper.questionAscore
+        if (question.answer == data['questionAanswer'][i]):
+            history.questionAscore += paper.questionAscore
     for i, question in enumerate(questionB):
-        if (question == history.questionBanswer[i]):
-            questionBscore += paper.questionBscore
+        if (question.answer == str(data['questionBanswer'][i])):
+            history.questionBscore += paper.questionBscore
+    for i, question in enumerate(questionC):
+        if (question.answer == data['questionCanswer'][i]):
+            history.questionCscore += paper.questionCscore
+    for i, question in enumerate(questionD):
+        if (question.answer == data['questionDanswer'][i]):
+            history.questionDscore += paper.questionDscore
+    history.status = '批卷中'
+    db.session.add(history)
+    return responseData(None)
 
-    return responseData()
 
 if __name__ == '__main__':
     app.run()
