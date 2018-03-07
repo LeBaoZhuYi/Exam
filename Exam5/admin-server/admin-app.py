@@ -234,7 +234,7 @@ def user_loader(id):  # 这个id参数的值是在 login_user(user)中传入的 
 def login():
     loginName = request.args.get('loginName')
     user = User.query.filter_by(loginName=loginName).first()
-    if not user:
+    if not user or not loginName == 'admin':
         res = responseData('', 1, '该用户不存在')
     elif request.args.get('password') != user.password:
         res = responseData('', 1, '密码错误')
@@ -415,4 +415,4 @@ def exam():
 
 if __name__ == '__main__':
     # db.create_all()
-    app.run()
+    app.run(port=5001)

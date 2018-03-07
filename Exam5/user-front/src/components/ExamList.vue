@@ -27,9 +27,9 @@
         </el-table-column>
         <el-table-column prop="ctime" label="发布时间" width="240">
         </el-table-column>
-        <el-table-column prop="endTime" label="开始时间">
+        <el-table-column prop="startTime" label="开始时间">
         </el-table-column>
-        <el-table-column prop="startTime" label="结束时间">
+        <el-table-column prop="endTime" label="结束时间">
         </el-table-column>
         <el-table-column label="操作" width="180">
           <template scope="scope">
@@ -65,56 +65,7 @@
         pageSize: 5,
         select_word: '',
         tableData: [],
-        allData: [{
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }, {
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }, {
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }, {
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }, {
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }, {
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }, {
-          id: '1',
-          title: '好滋好味鸡蛋仔',
-          degree: '困难',
-          ctime: (new Date()).toDateString(),
-          startTime: (new Date()).toDateString(),
-          endTime: (new Date()).toDateString()
-        }]
+        allData: []
       }
     },
     created() {
@@ -171,9 +122,9 @@
         window.location.href = url;
       },
       start(index, row) {
-        let startTime = row.startTime;
-        let endTime = row.endTime;
-        let now = new Date();
+        let startTime = Date.parse(new Date(row.startTime));
+        let endTime = Date.parse(new Date(row.endTime));
+        let now = Date.parse(new Date());
         if (now < startTime){
           this.$alert("未到考试开始时间", "警告");
         } else if(now > endTime){

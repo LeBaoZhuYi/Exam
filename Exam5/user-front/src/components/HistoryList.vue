@@ -57,6 +57,11 @@
                       type="textarea"
                       autosize v-model="selectTable.questionAanswer" auto-complete="off"></el-input>
           </el-form-item>
+          <el-form-item label="单选题答案" label-width="100px">
+            <el-input :disabled="true"
+                      type="textarea"
+                      autosize v-model="selectTable.questionAright" auto-complete="off"></el-input>
+          </el-form-item>
           <el-form-item label="单选题得分" label-width="100px">
             <el-input :disabled="true" v-model="selectTable.questionAscore" auto-complete="off"></el-input>
           </el-form-item>
@@ -64,6 +69,11 @@
             <el-input :disabled="true"
                       type="textarea"
                       autosize v-model="selectTable.questionBanswer" auto-complete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="多选题答案" label-width="100px">
+            <el-input :disabled="true"
+                      type="textarea"
+                      autosize v-model="selectTable.questionBright" auto-complete="off"></el-input>
           </el-form-item>
           <el-form-item label="多选题得分" label-width="100px">
             <el-input :disabled="true" v-model="selectTable.questionBscore" auto-complete="off"></el-input>
@@ -73,6 +83,11 @@
                       type="textarea"
                       autosize v-model="selectTable.questionCanswer" auto-complete="off"></el-input>
           </el-form-item>
+          <el-form-item label="填空题答案" label-width="100px">
+            <el-input :disabled="true"
+                      type="textarea"
+                      autosize v-model="selectTable.questionCright" auto-complete="off"></el-input>
+          </el-form-item>
           <el-form-item label="填空题得分" label-width="100px">
             <el-input :disabled="true" v-model="selectTable.questionCscore" auto-complete="off"></el-input>
           </el-form-item>
@@ -80,6 +95,11 @@
             <el-input :disabled="true"
                       type="textarea"
                       autosize v-model="selectTable.questionDanswer" auto-complete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="判断题答案" label-width="100px">
+            <el-input :disabled="true"
+                      type="textarea"
+                      autosize v-model="selectTable.questionDright" auto-complete="off"></el-input>
           </el-form-item>
           <el-form-item label="判断题得分" label-width="100px">
             <el-input :disabled="true" v-model="selectTable.questionDscore" auto-complete="off"></el-input>

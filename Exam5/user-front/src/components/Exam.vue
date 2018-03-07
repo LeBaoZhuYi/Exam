@@ -382,7 +382,7 @@
           self.$http.post(self.examUrl, self.examForm).then((response) => {
             if (response.data.status == 0) {
               self.$alert("交卷成功！", "提示");
-              window.href.location = '/historyList';
+              window.location.href = '/historyList';
             } else if (response.data.status > 0) {
               self.$message.error("交卷失败！" + response.data.msg);
             } else {
