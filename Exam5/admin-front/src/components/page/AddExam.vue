@@ -52,7 +52,8 @@
                     startTime: "",
                     endDate: "",
                     endTime: ""
-                }
+                },
+                url: '/api/addExam'
             }
         },
         methods: {
@@ -60,7 +61,7 @@
                 this.$http.post(this.url, this.form).then((response) => {
                     if(response.data.status == 0){
                         this.$message.success("提交成功");
-                        window.location.href = "/admin/user-table";
+                        window.location.href = "/admin/exam-table";
                     } else if(response.data.status > 0){
                         this.$message.warning("提交失败！" + response.data.msg);
                     } else{

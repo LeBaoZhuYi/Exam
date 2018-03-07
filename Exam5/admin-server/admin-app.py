@@ -272,7 +272,7 @@ def logout():
 
 @app.route('/examList', methods=['GET'])
 def examList():
-    accessToken = request.cookies.get('examToken')
+    accessToken = request.cookies.get('examAdminToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
@@ -286,7 +286,7 @@ def examList():
 
 @app.route('/historyList', methods=['GET'])
 def historyList():
-    accessToken = request.cookies.get('examToken')
+    accessToken = request.cookies.get('examAdminToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
@@ -301,62 +301,9 @@ def historyList():
     historyJsonList = [history.to_json() for history in historyList]
     return responseData(historyJsonList)
 
-
-@app.route('/paperInfo', methods=['GET'])
-def paperInfo():
-    accessToken = request.cookies.get('examToken')
-    token = Token.query.filter_by(accessToken=accessToken).first()
-    if not token:
-        return responseData('', 1, '尚未登录')
-    user = User.query.filter_by(id=token.userId).first()
-    if not user:
-        return responseData('', 2, '用户不存在')
-    examId = request.args.get('examId')
-    exam = Exam.query.filter_by(id=examId).first()
-    if not exam:
-        return responseData('', 3, '未找到考试')
-    if datetime.datetime.now() < exam.startTime:
-        return responseData('', 4, '考试未开始')
-    if datetime.datetime.now() > exam.endTime:
-        return responseData('', 4, '考试已结束')
-    paper = Paper.query.filter_by(id=exam.paperId).first()
-    if not paper:
-        return responseData('', 5, '未找到试卷')
-
-    result = paper.to_json()
-    # 单选
-
-    questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
-    result['questionAlist'] = [{'id': question.id,
-                                'questionTitle': question.title,
-                                'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in
-                                               json.loads(question.options)]} for question in questionA]
-    # 多选
-    questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
-    result['questionBlist'] = [{'id': question.id,
-                                'questionTitle': question.title,
-                                'optionMaps': [{'k': option.keys()[0], 'v': option.values()[0]} for option in
-                                               json.loads(question.options)]} for question in questionB]
-    # 填空
-    questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
-    result['questionClist'] = [{'id': question.id,
-                                'questionTitle': question.title} for question in questionC]
-    # 判断
-    questionD = Question.query.filter(Question.id.in_(json.loads(paper.questionDlist))).all()
-    result['questionDlist'] = [{'id': question.id,
-                                'questionTitle': question.title} for question in questionD]
-    # 简答
-    questionE = Question.query.filter(Question.id.in_(json.loads(paper.questionElist))).all()
-    result['questionElist'] = [{'id': question.id,
-                                'questionTitle': question.title} for question in questionE]
-
-    return responseData(result)
-
-
-@app.route('/exam', methods=['POST'])
+@app.route('/addExam', methods=['POST'])
 def exam():
-    accessToken = request.cookies.get('examToken')
-
+    accessToken = request.cookies.get('examAdminToken')
     token = Token.query.filter_by(accessToken=accessToken).first()
     if not token:
         return responseData('', 1, '尚未登录')
@@ -364,52 +311,13 @@ def exam():
     if not user:
         return responseData('', 2, '用户不存在')
     data = json.loads(request.data)
-    examId = int(data['examId'])
-    exam = Exam.query.filter_by(id=examId).first()
-    if not exam:
-        return responseData('', 2, '考试不存在')
-    paper = Paper.query.filter_by(id=exam.paperId).first()
-    if not paper:
-        return responseData('', 2, '考试不存在')
-    questionA = Question.query.filter(Question.id.in_(json.loads(paper.questionAlist))).all()
-    questionB = Question.query.filter(Question.id.in_(json.loads(paper.questionBlist))).all()
-    questionC = Question.query.filter(Question.id.in_(json.loads(paper.questionClist))).all()
-    questionD = Question.query.filter(Question.id.in_(json.loads(paper.questionDlist))).all()
-    history = History()
-    history.examId = examId
-    history.examTitle = exam.title
-    history.degree = exam.degree
-    history.studyId = user.studyId
-    history.studyName = user.studyName
-    history.questionAanswer = json.dumps(data['questionAanswer'])
-    history.questionBanswer = json.dumps(duoxuanTransfer(data['questionBanswer']))
-    history.questionCanswer = json.dumps(data['questionCanswer'],ensure_ascii=False)
-    history.questionDanswer = json.dumps(data['questionDanswer'],ensure_ascii=False)
-    history.questionEanswer = json.dumps(data['questionEanswer'],ensure_ascii=False)
-    history.questionAscore, history.questionBscore, history.questionCscore, history.questionDscore, history.questionEscore = 0, 0, 0, 0, 0
-    questionAright,questionBright,questionCright,questionDright = [],[],[],[]
-    for i, question in enumerate(questionA):
-        questionAright.append(question.answer)
-        if (question.answer == data['questionAanswer'][i]):
-            history.questionAscore += paper.questionAscore
-    for i, question in enumerate(questionB):
-        questionBright.append(question.answer)
-        if (question.answer == str(data['questionBanswer'][i])):
-            history.questionBscore += paper.questionBscore
-    for i, question in enumerate(questionC):
-        questionCright.append(question.answer)
-        if (question.answer == data['questionCanswer'][i]):
-            history.questionCscore += paper.questionCscore
-    for i, question in enumerate(questionD):
-        questionDright.append(question.answer)
-        if (question.answer == data['questionDanswer'][i]):
-            history.questionDscore += paper.questionDscore
-    history.questionAright = json.dumps(questionAright)
-    history.questionBright = json.dumps(duoxuanTransfer(questionBright))
-    history.questionCright = json.dumps(questionCright,ensure_ascii=False)
-    history.questionDright = json.dumps(questionDright,ensure_ascii=False)
-    history.status = '批卷中'
-    db.session.add(history)
+
+    paperId= data['paperId']
+    examTitle= data['examTitle']
+    startDate= data['startDate']
+    startTime= data['startTime']
+    endDate= data['endDate']
+    endTime= data['endTime']
     return responseData(None)
 
 
