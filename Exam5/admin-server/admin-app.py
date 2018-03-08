@@ -293,12 +293,18 @@ def historyList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    historyList = History.query.filter_by(studyId=user.studyId).all()
-    # results = []
-    # for history in historyList:
-    #     result = history.to_json
-
-    historyJsonList = [history.to_json() for history in historyList]
+    historyList = History.query.all()
+    historyJsonList = []
+    for history in historyList:
+        history_json = history.to_json()
+        if history.score == None:
+            exam = Exam.query.filter_by(id=history.examId).first()
+            paper = Paper.query.filter_by(id=exam.paperId).first()
+            questionEidList = json.loads(paper.questionElist)
+            questionElist = Question.query.filter(Question.id.in_(questionEidList)).all()
+            questionEanswer = json.loads(history.questionEanswer)
+            history_json['questionEinfoList'] = [{'title': questionElist[i].title, 'answer': questionEanswer[i], 'score': 0} for i in range(0, len(questionElist))]
+        historyJsonList.append(history_json)
     return responseData(historyJsonList)
 
 @app.route('/addExam', methods=['POST'])

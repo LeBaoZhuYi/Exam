@@ -133,7 +133,7 @@
                 const self = this;
                 self.filtedTableData = self.allData.filter(function (d) {
                     let flag = false;
-                    self.formmatObjectData(d);
+                    self.formatObjectData(d);
                     if (d.questionType.indexOf(self.select_cate) > -1) {
                         Object.values(d).forEach(v => {
                             if (v.indexOf(self.select_word) > -1) {
