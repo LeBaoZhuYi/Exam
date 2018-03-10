@@ -191,7 +191,6 @@
                 this.$http.get(this.historyListUrl, {params: {token:token}}).then((response) => {
                     if (response.data.status == 0) {
                         self.allData = response.data.data;
-                        let groupMap = new Map();
                     } else if (response.data.status > 0) {
                         self.$message.error('获取分组列表失败！' + response.data.msg);
                     } else {
