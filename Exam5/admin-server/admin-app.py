@@ -433,18 +433,147 @@ def addExam():
         title= data['title']
         startTime= data['startTime']
         endTime= data['endTime']
-        startDate= data['startDate']
-        endDate= data['endDate']
         exam = Exam()
         exam.title = title
         exam.paperId = paperId
-        exam.startTime = startDate
-        exam.endTime = endDate
+        exam.startTime = startTime
+        exam.endTime = endTime
         db.session.add(exam)
     except Exception as e:
         return responseData('',1, '添加失败，请检查输入数据')
     return responseData(None)
 
+@app.route('/addQuestionA', methods=['POST'])
+def addQuestionA():
+    accessToken = request.cookies.get('examAdminToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    data = json.loads(request.data)
+    try:
+        degree= data['degree']
+        title= data['title']
+        optionA= data['optionA']
+        optionB= data['optionB']
+        optionC= data['optionC']
+        optionD= data['optionD']
+        answer= data['answer']
+        question = Question()
+        question.title = title
+        question.degree = degree
+        question.answer = answer
+        question.options = json.dumps([{'A': optionA, 'B': optionB, 'C': optionC, 'D': optionD}])
+        question.qType = '单选题'
+        db.session.add(question)
+    except Exception as e:
+        return responseData('',1, '添加失败，请检查输入数据')
+    return responseData(None)
+
+@app.route('/addQuestionB', methods=['POST'])
+def addQuestionB():
+    accessToken = request.cookies.get('examAdminToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    data = json.loads(request.data)
+    try:
+        degree= data['degree']
+        title= data['title']
+        optionA= data['optionA']
+        optionB= data['optionB']
+        optionC= data['optionC']
+        optionD= data['optionD']
+        answer= duoxuan_r[data['answer']]
+        question = Question()
+        question.title = title
+        question.degree = degree
+        question.answer = answer
+        question.options = json.dumps([{'A': optionA, 'B': optionB, 'C': optionC, 'D': optionD}])
+        question.qType = '多选题'
+        db.session.add(question)
+    except Exception as e:
+        return responseData('',1, '添加失败，请检查输入数据')
+    return responseData(None)
+
+@app.route('/addQuestionC', methods=['POST'])
+def addQuestionC():
+    accessToken = request.cookies.get('examAdminToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    data = json.loads(request.data)
+    try:
+        degree= data['degree']
+        title= data['title']
+        answer= data['answer']
+        question = Question()
+        question.title = title
+        question.degree = degree
+        question.answer = answer
+        question.options = '[]'
+        question.qType = '填空题'
+        db.session.add(question)
+    except Exception as e:
+        return responseData('',1, '添加失败，请检查输入数据')
+    return responseData(None)
+
+@app.route('/addQuestionD', methods=['POST'])
+def addQuestionD():
+    accessToken = request.cookies.get('examAdminToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    data = json.loads(request.data)
+    try:
+        degree= data['degree']
+        title= data['title']
+        answer= data['answer']
+        question = Question()
+        question.title = title
+        question.degree = degree
+        question.answer = answer
+        question.options = '[]'
+        question.qType = '判断题'
+        db.session.add(question)
+    except Exception as e:
+        return responseData('',1, '添加失败，请检查输入数据')
+    return responseData(None)
+
+@app.route('/addQuestionE', methods=['POST'])
+def addQuestionE():
+    accessToken = request.cookies.get('examAdminToken')
+    token = Token.query.filter_by(accessToken=accessToken).first()
+    if not token:
+        return responseData('', 1, '尚未登录')
+    user = User.query.filter_by(id=token.userId).first()
+    if not user:
+        return responseData('', 2, '用户不存在')
+    data = json.loads(request.data)
+    try:
+        degree= data['degree']
+        title= data['title']
+        question = Question()
+        question.title = title
+        question.degree = degree
+        question.answer = ''
+        question.options = '[]'
+        question.qType = '简答题'
+        db.session.add(question)
+    except Exception as e:
+        return responseData('',1, '添加失败，请检查输入数据')
+    return responseData(None)
 if __name__ == '__main__':
     # db.create_all()
     app.run(port=5001)

@@ -187,8 +187,7 @@
         methods: {
             getData() {
                 const self = this;
-                let token = this.getCookie('examAdminToken');
-                this.$http.get(this.historyListUrl, {params: {token:token}}).then((response) => {
+                this.$http.get(this.historyListUrl).then((response) => {
                     if (response.data.status == 0) {
                         self.allData = response.data.data;
                     } else if (response.data.status > 0) {

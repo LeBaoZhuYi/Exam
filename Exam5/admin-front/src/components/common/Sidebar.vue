@@ -94,7 +94,7 @@
                             },
                             {
                                 index: 'add-e-question',
-                                title: '添加简单题'
+                                title: '添加简答题'
                             }
                         ]
                     }
