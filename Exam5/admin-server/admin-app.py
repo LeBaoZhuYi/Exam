@@ -279,7 +279,7 @@ def questionList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    questionList = Question.query.all()
+    questionList = Question.query.order_by(Question.ctime.desc()).all()
     questionJsonList = [question.to_json() for question in questionList]
     return responseData(questionJsonList)
 
@@ -292,7 +292,7 @@ def paperList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    paperList = Paper.query.all()
+    paperList = Paper.query.order_by(Paper.ctime.desc()).all()
     paperJsonList = [paper.to_json() for paper in paperList]
     return responseData(paperJsonList)
 
@@ -305,7 +305,7 @@ def examList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    examList = Exam.query.all()
+    examList = Exam.query.order_by(Exam.ctime.desc()).all()
     examJsonList = [exam.to_json() for exam in examList]
     return responseData(examJsonList)
 
@@ -319,7 +319,7 @@ def historyList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    historyList = History.query.all()
+    historyList = History.query.order_by(History.ctime.desc()).all()
     historyJsonList = []
     for history in historyList:
         history_json = history.to_json()
@@ -342,7 +342,7 @@ def userList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    userList = User.query.all()
+    userList = User.query.order_by(User.ctime.desc()).all()
     userJsonList = []
     for user in userList:
         if not user.loginName == 'admin':
