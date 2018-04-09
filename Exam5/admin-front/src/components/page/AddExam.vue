@@ -12,7 +12,7 @@
                     <el-input v-model="form.paperId"></el-input>
                 </el-form-item>
                 <el-form-item label="考试名">
-                    <el-input v-model="form.examTitle"></el-input>
+                    <el-input v-model="form.title"></el-input>
                 </el-form-item>
                 <el-form-item label="开始时间">
                     <el-col :span="11">
@@ -58,6 +58,16 @@
         },
         methods: {
             onSubmit() {
+                let startTime = this.form.startDate;
+                let endTime = this.form.endDate;
+                startTime.setHours(this.form.startTime.getHours());
+                startTime.setMinutes(this.form.startTime.getMinutes());
+                startTime.setSeconds(this.form.startTime.getSeconds());
+                endTime.setHours(this.form.endTime.getHours());
+                endTime.setMinutes(this.form.endTime.getMinutes());
+                endTime.setSeconds(this.form.endTime.getSeconds());
+                this.form.startTime = this.dateToString(startTime);
+                this.form.endTime = this.dateToString(endTime);
                 this.$http.post(this.url, this.form).then((response) => {
                     if(response.data.status == 0){
                         this.$message.success("提交成功");

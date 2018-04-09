@@ -7,11 +7,6 @@
             </el-breadcrumb>
         </div>
         <div class="handle-box">
-            <el-select v-model="select_cate" placeholder="筛选考试" class="handle-select mr10">
-                <el-option label="全部" value=""></el-option>
-                <el-option v-for="exam in examList" :label="exam.examTitle" :value="exam.examTitle"
-                           :key="exam.id"></el-option>
-            </el-select>
             <el-input v-model="select_word" placeholder="筛选关键词" class="handle-input mr10"></el-input>
             <el-button type="primary" icon="search" @click="search">搜索</el-button>
         </div>
@@ -32,7 +27,10 @@
                 <el-table-column label="操作" width="180">
                     <template scope="scope">
                         <el-button size="small" type="danger"
-                                   @click="handleFinish(scope.$index, scope.row)">简答题批卷
+                                   @click="handleFinish(scope.$index, scope.row)">简答题批阅
+                        </el-button>
+                        <el-button size="small" type="info"
+                                   @click="showScore(scope.$index, scope.row)">查看作答
                         </el-button>
                     </template>
                 </el-table-column>
@@ -48,7 +46,73 @@
                     :total="total">
                 </el-pagination>
             </div>
-
+            <el-dialog title="考试详情" :visible.sync="dialogFormVisible2">
+                <el-form :model="selectTable2">
+                    <el-form-item label="单选题回答" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionAanswer" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="单选题答案" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionAright" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="单选题得分" label-width="100px">
+                        <el-input :disabled="true" v-model="selectTable2.questionAscore" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="多选题回答" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionBanswer" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="多选题答案" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionBright" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="多选题得分" label-width="100px">
+                        <el-input :disabled="true" v-model="selectTable2.questionBscore" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="填空题回答" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionCanswer" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="填空题答案" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionCright" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="填空题得分" label-width="100px">
+                        <el-input :disabled="true" v-model="selectTable2.questionCscore" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="判断题回答" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionDanswer" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="判断题答案" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionDright" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="判断题得分" label-width="100px">
+                        <el-input :disabled="true" v-model="selectTable2.questionDscore" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="简答题回答" label-width="100px">
+                        <el-input :disabled="true"
+                                  type="textarea"
+                                  autosize v-model="selectTable2.questionEanswer" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="简答题得分" label-width="100px">
+                        <el-input :disabled="true" v-model="selectTable2.questionEscore" auto-complete="off"></el-input>
+                    </el-form-item>
+                </el-form>
+                <div slot="footer" class="dialog-footer">
+                    <el-button @click="dialogFormVisible2 = false">关 闭</el-button>
+                </div>
+            </el-dialog>
             <el-dialog title="批卷" :visible.sync="dialogFormVisible">
                 <el-form :model="selectTable">
                     <el-form-item label="编号" label-width="100px">
@@ -57,10 +121,16 @@
                     <el-form-item label="学生名" label-width="100px">
                         <el-input v-model="selectTable.studyName" auto-complete="off"></el-input>
                     </el-form-item>
+                    <el-form-item :label="'简答题'+index" v-for="(questionE, index) in selectTable.questionEinfoList"
+                                  label-width="100px">
+                        <el-input :disabled="true" v-model="questionE.title" auto-complete="off"></el-input>
+                        <el-input :disabled="true" v-model="questionE.answer" auto-complete="off"></el-input>
+                        <el-input v-model="questionE.score" auto-complete="off"></el-input>
+                    </el-form-item>
                 </el-form>
                 <div slot="footer" class="dialog-footer">
                     <el-button @click="dialogFormVisible = false">取 消</el-button>
-                    <el-button type="primary" @click="">确 定</el-button>
+                    <el-button type="primary" @click="readOverUrl()">确 定</el-button>
                 </div>
             </el-dialog>
         </div>
@@ -74,67 +144,38 @@
         components: {ElOption},
         data() {
             return {
-//        url: '/api/admin/student/getList',
+                historyListUrl: '/api/historyList',
+                readOverUrl: '/api/readOver',
                 total: 0,
                 currentPage: 1,
                 dialogFormVisible: false,
+                dialogFormVisible2: false,
                 selectTable: {},
+                selectTable2: {},
                 pageSize: 5,
-                select_cate: '',
                 select_word: '',
                 is_search: false,
                 tableData: [],
-                allData: [{
-                    id: 1,
-                    examTitle: 2,
-                    studyName: "123",
-                    score: "456",
-                    status: "456",
-                    ctime: new Date()
-                }, {
-                    id: 1,
-                    examTitle: 2,
-                    studyName: "123",
-                    score: "456",
-                    status: "456",
-                    ctime: new Date()
-                }, {
-                    id: 1,
-                    examTitle: 2,
-                    studyName: "123",
-                    score: "456",
-                    status: "456",
-                    ctime: new Date()
-                }, {
-                    id: 1,
-                    examTitle: 2,
-                    studyName: "123",
-                    score: "456",
-                    status: "456",
-                    ctime: new Date()
-                }],
-                examList: []
+                allData: [],
             }
         },
         created() {
-//      this.getData();
+            this.getData();
             this.tableData = this.allData;
             this.handleCurrentChange(1);
         },
         computed: {
             data() {
                 const self = this;
-                self.filtedTableData = self.allData.filter(function (d) {
+                self.filtedTableData = self.allData.filter(function (od) {
                     let flag = false;
-                    self.formmatObjectData(d);
-                    if (d.examTitle.indexOf(self.select_cate) > -1) {
-                        Object.values(d).forEach(v => {
-                            if (v.indexOf(self.select_word) > -1) {
-                                flag = true;
-                                return;
-                            }
-                        });
-                    }
+                    let d = self.formatObjectData(od);
+                    Object.values(d).forEach(v => {
+                        if (v.indexOf(self.select_word) > -1) {
+                            flag = true;
+                            return;
+                        }
+                    });
                     if (flag) {
                         return d;
                     }
@@ -146,19 +187,9 @@
         methods: {
             getData() {
                 const self = this;
-                this.$http.get(this.url).then((response) => {
+                this.$http.get(this.historyListUrl).then((response) => {
                     if (response.data.status == 0) {
                         self.allData = response.data.data;
-                        let groupMap = new Map();
-                        self.allData.forEach(function (value, key, arr) {
-                            if (!groupMap.has(value.groupId)) {
-                                groupMap.set(value.groupId,
-                                    {
-                                        groupId: value.groupId,
-                                        groupName: value.groupName
-                                    })
-                            }
-                        });
                     } else if (response.data.status > 0) {
                         self.$message.error('获取分组列表失败！' + response.data.msg);
                     } else {
@@ -183,6 +214,10 @@
                 let page = this.currentPage;
                 let pageSize = this.pageSize;
                 return allData.slice(pageSize * (page - 1), pageSize * page);
+            },
+            showScore(index, row) {
+                this.dialogFormVisible2 = true;
+                this.selectTable2 = row;
             }
         }
     }

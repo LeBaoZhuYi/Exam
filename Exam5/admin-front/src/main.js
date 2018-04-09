@@ -33,7 +33,8 @@ Vue.prototype.timestampToString = function (timeStamp) {
     let date = new Date(timeStamp);
     return this.dateToString(date);
 };
-Vue.prototype.formatObjectData = function (data) {
+Vue.prototype.formatObjectData = function (odata) {
+    let data = JSON.parse(JSON.stringify(odata));
     Object.keys(data).forEach(k => {
         if (data[k] == undefined) {
             data[k] = "";
@@ -44,6 +45,7 @@ Vue.prototype.formatObjectData = function (data) {
             data[k] = String(data[k]);
         }
     });
+    return data;
 };
 
 Vue.prototype.setCookie = function (name, value, exDays) {

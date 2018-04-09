@@ -27,13 +27,13 @@
                                 <span>{{ props.row.id }}</span>
                             </el-form-item>
                             <el-form-item label="题目">
-                                <span>{{ props.row.questionTitle }}</span>
+                                <span>{{ props.row.title }}</span>
                             </el-form-item>
                             <el-form-item label="题目类型">
-                                <span>{{ props.row.questionType }}</span>
+                                <span>{{ props.row.qType }}</span>
                             </el-form-item>
                             <el-form-item label="难易程度">
-                                <span>{{ props.row.questionDegree }}</span>
+                                <span>{{ props.row.degree }}</span>
                             </el-form-item>
                             <el-form-item label="答案">
                                 <span>{{ props.row.answer }}</span>
@@ -41,16 +41,19 @@
                             <el-form-item label="创建时间">
                                 <span>{{ props.row.ctime }}</span>
                             </el-form-item>
+                            <el-form-item label="选项">
+                                <span>{{ props.row.options }}</span>
+                            </el-form-item>
                         </el-form>
                     </template>
                 </el-table-column>
                 <el-table-column prop="id" label="编号" sortable width="120">
                 </el-table-column>
-                <el-table-column prop="questionTitle" label="题目" sortable width="120">
+                <el-table-column prop="title" label="题目" sortable width="120">
                 </el-table-column>
-                <el-table-column prop="questionType" label="题目类型" width="120">
+                <el-table-column prop="qType" label="题目类型" width="120">
                 </el-table-column>
-                <el-table-column prop="questionDegree" label="难易程度" width="120">
+                <el-table-column prop="degree" label="难易程度" width="120">
                 </el-table-column>
                 <el-table-column prop="ctime" label="创建时间">
                 </el-table-column>
@@ -84,7 +87,7 @@
         components: {ElOption},
         data() {
             return {
-//        url: '/api/admin/student/getList',
+                url: '/api/questionList',
                 total: 0,
                 currentPage: 1,
                 pageSize: 5,
@@ -92,49 +95,21 @@
                 select_word: '',
                 is_search: false,
                 tableData: [],
-                allData: [{
-                    id: 1,
-                    questionTitle: 2,
-                    questionType: "123",
-                    questionDegree: "456",
-                    answer: "456",
-                    ctime: new Date()
-                }, {
-                    id: 1,
-                    questionTitle: 2,
-                    questionType: "123",
-                    questionDegree: "456",
-                    answer: "456",
-                    ctime: new Date()
-                }, {
-                    id: 1,
-                    questionTitle: 2,
-                    questionType: "123",
-                    questionDegree: "456",
-                    answer: "456",
-                    ctime: new Date()
-                }, {
-                    id: 1,
-                    questionTitle: 2,
-                    questionType: "123",
-                    questionDegree: "456",
-                    answer: "456",
-                    ctime: new Date()
-                }]
+                allData: []
             }
         },
         created() {
-//      this.getData();
+     this.getData();
             this.tableData = this.allData;
             this.handleCurrentChange(1);
         },
         computed: {
             data() {
                 const self = this;
-                self.filtedTableData = self.allData.filter(function (d) {
+                self.filtedTableData = self.allData.filter(function (od) {
                     let flag = false;
-                    self.formmatObjectData(d);
-                    if (d.questionType.indexOf(self.select_cate) > -1) {
+                    let d = self.formatObjectData(od);
+                    if (d.qType.indexOf(self.select_cate) > -1) {
                         Object.values(d).forEach(v => {
                             if (v.indexOf(self.select_word) > -1) {
                                 flag = true;
@@ -156,16 +131,6 @@
                 this.$http.get(this.url).then((response) => {
                     if (response.data.status == 0) {
                         self.allData = response.data.data;
-                        let groupMap = new Map();
-                        self.allData.forEach(function (value, key, arr) {
-                            if (!groupMap.has(value.groupId)) {
-                                groupMap.set(value.groupId,
-                                    {
-                                        groupId: value.groupId,
-                                        groupName: value.groupName
-                                    })
-                            }
-                        });
                     } else if (response.data.status > 0) {
                         self.$message.error('获取分组列表失败！' + response.data.msg);
                     } else {

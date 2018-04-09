@@ -23,6 +23,7 @@ def encryptUserId(userId):
 
 duoxuan = {0: '', 1: 'A', 2: 'B', 3: 'AB', 4: 'C', 5: 'AC', 6: 'BC', 7: 'ABC', 8: 'D', 9: 'AD', 10: 'BD', 11: 'ABD', 12: 'CD',
            13: 'ACD', 14: 'BCD', 15: 'ABCD'}
+duoxuan_r = dict([val,key] for key,val in duoxuan.items())
 
 def duoxuanTransfer(numList):
     return [duoxuan[num] for num in numList]

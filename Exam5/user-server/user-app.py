@@ -279,7 +279,7 @@ def examList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    examList = Exam.query.all()
+    examList = Exam.query.order_by(Exam.ctime.desc()).all()
     examJsonList = [exam.to_json() for exam in examList]
     return responseData(examJsonList)
 
@@ -293,7 +293,7 @@ def historyList():
     user = User.query.filter_by(id=token.userId).first()
     if not user:
         return responseData('', 2, '用户不存在')
-    historyList = History.query.filter_by(studyId=user.studyId).all()
+    historyList = History.query.filter_by(studyId=user.studyId).order_by(History.ctime.desc()).all()
     # results = []
     # for history in historyList:
     #     result = history.to_json

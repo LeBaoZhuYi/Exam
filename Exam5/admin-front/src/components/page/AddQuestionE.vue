@@ -9,10 +9,10 @@
         <div class="form-box">
             <el-form ref="form" :model="form" label-width="80px">
                 <el-form-item label="题目">
-                    <el-input v-model="form.questionTitle"></el-input>
+                    <el-input v-model="form.title"></el-input>
                 </el-form-item>
                 <el-form-item label="难度">
-                    <el-radio-group v-model="form.questionDegree">
+                    <el-radio-group v-model="form.degree">
                         <el-radio label="简单" value="1"></el-radio>
                         <el-radio label="普通" value="2"></el-radio>
                         <el-radio label="较难" value="3"></el-radio>
@@ -32,14 +32,15 @@
         data: function () {
             return {
                 form: {
-                    questionTitle: "",
+                    title: "",
                     optionA: "",
                     optionB: "",
                     optionC: "",
                     optionD: "",
                     answer: "",
-                    questionDegree: ""
-                }
+                    degree: ""
+                },
+                url: '/api/addQuestionE'
             }
         },
         methods: {
@@ -47,7 +48,7 @@
                 this.$http.post(this.url, this.form).then((response) => {
                     if(response.data.status == 0){
                         this.$message.success("提交成功");
-                        window.location.href = "/admin/user-table";
+                        window.location.href = "/admin/question-table";
                     } else if(response.data.status > 0){
                         this.$message.warning("提交失败！" + response.data.msg);
                     } else{
