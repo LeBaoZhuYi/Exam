@@ -48,7 +48,7 @@
 				<div class="col-xs-5">
 					<div class="logo">
 						<h1>
-							<a href="#"><img alt="" src="resources/images/logo.png"></a>
+							<a href="#"><img alt="" src="resources/images/logo.png">     会计基础在线学习系统</a>
 						</h1>
 					</div>
 				</div>
