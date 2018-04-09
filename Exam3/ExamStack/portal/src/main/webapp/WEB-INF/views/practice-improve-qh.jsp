@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="row">
 					<div class="col-xs-5">
 						<div class="logo">
-							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
+							<h1><a href="#"><img alt="" src="resources/images/slogo.png"><img alt="" src="resources/images/logo.png"></a></h1>
 						</div>
 					</div>
 					<div class="col-xs-7" id="login-info">
