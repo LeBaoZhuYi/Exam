@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<base href="<%=basePath%>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>财经法规与职业道德学习系统</title>
+		<title>成本会计实务训练系统</title>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="row">
 					<div class="col-xs-8">
 						<div class="logo">
-							<h1><a href="#"><img alt="" src="resources/images/logo.png">财经法规与职业道德学习系统</a></h1>
+							<h1><a href="#"><img alt="" src="resources/images/logo.png">成本会计实务训练系统</a></h1>
 						</div>
 					</div>
 					<div class="col-xs-4" id="login-info">

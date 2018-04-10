@@ -17,7 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>财经法规与职业道德学习系统</title>
+		<title>成本会计实务训练系统</title>
 		<meta name="keywords" content="">
 		<link rel="shortcut icon" href="<%=basePath%>resources/images/favicon.ico" />
 		<link href="resources/bootstrap/css/bootstrap-huan.css" rel="stylesheet">
@@ -68,7 +68,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="logo">
 							<h1><a href="#">后台管理系统</a></h1>
 							<div class="hmeta">
-								财经法规与职业道德学习系统
+								成本会计实务训练系统
 							</div>
 						</div>
 					</div>

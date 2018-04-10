@@ -34,7 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="logo">
 							<h1><a href="#">后台管理系统</a></h1>
 							<div class="hmeta">
-								财经法规与职业道德学习系统
+								成本会计实务训练系统
 							</div>
 						</div>
 					</div>

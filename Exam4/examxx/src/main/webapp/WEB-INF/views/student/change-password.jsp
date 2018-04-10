@@ -34,7 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="row">
 					<div class="col-xs-8">
 						<div class="logo">
-							<h1><a href="#"><img alt="" src="resources/images/logo.png">财经法规与职业道德学习系统</a></h1>
+							<h1><a href="#"><img alt="" src="resources/images/logo.png">成本会计实务训练系统</a></h1>
 						</div>
 					</div>
 					<div class="col-xs-4" id="login-info">
